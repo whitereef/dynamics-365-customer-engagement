@@ -1,21 +1,22 @@
 ---
-title: "SolutionComponent Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "SolutionComponent Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the SolutionComponent entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # SolutionComponent Entity Reference
+
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
 
 A component of a CRM solution.
 
@@ -27,8 +28,8 @@ A component of a CRM solution.
 |AddSolutionComponent|<xref href="Microsoft.Dynamics.CRM.AddSolutionComponent?text=AddSolutionComponent Action" />|<xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest>|
 |IsComponentCustomizable|<xref href="Microsoft.Dynamics.CRM.IsComponentCustomizable?text=IsComponentCustomizable Function" />|<xref:Microsoft.Crm.Sdk.Messages.IsComponentCustomizableRequest>|
 |RemoveSolutionComponent|<xref href="Microsoft.Dynamics.CRM.RemoveSolutionComponent?text=RemoveSolutionComponent Action" />|<xref:Microsoft.Crm.Sdk.Messages.RemoveSolutionComponentRequest>|
-|Retrieve|GET [*org URI*]/api/data/v9.0/solutioncomponents(*solutioncomponentid*)<br />See [Retrieve](../webapi/retrieve-entity-using-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/solutioncomponents<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|Retrieve|GET [*org URI*]/api/data/v9.0/solutioncomponents(*solutioncomponentid*)<br />See [Retrieve](/powerapps/developer/common-data-service/webapi/retrieve-entity-using-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/solutioncomponents<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
 |UpdateSolutionComponent|<xref href="Microsoft.Dynamics.CRM.UpdateSolutionComponent?text=UpdateSolutionComponent Action" />|<xref:Microsoft.Crm.Sdk.Messages.UpdateSolutionComponentRequest>|
 
 ## Entity Properties
@@ -48,7 +49,9 @@ A component of a CRM solution.
 |SchemaName|SolutionComponent|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [ComponentType](#BKMK_ComponentType)
@@ -167,6 +170,8 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 |207|SdkMessageResponseField|
 |208|Import Map|
 |210|WebWizard|
+|300|Canvas App|
+|371|Connector|
 
 
 
@@ -518,6 +523,6 @@ See solution Entity [solution_solutioncomponent](solution.md#BKMK_solution_solut
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.solutioncomponent?text=solutioncomponent EntityType" />

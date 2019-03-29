@@ -1,31 +1,33 @@
 ---
-title: "AccountLeads Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "AccountLeads Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the AccountLeads entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # AccountLeads Entity Reference
 
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
+
 description.
 
-**Added by**: Lead Management Solution<br />
+**Added by**: Lead Management Solution
+
 
 ## Messages
 
 |Message|Web API Operation|SDK Assembly|
 |-|-|-|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/accountleadscollection<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/accountleadscollection<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
 
 ## Entity Properties
 
@@ -152,7 +154,9 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Type|Integer|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [AccountId](#BKMK_AccountId)
@@ -215,6 +219,8 @@ Listed by **SchemaName**.
 
 ### <a name="BKMK_accountleads_AsyncOperations"></a> accountleads_AsyncOperations
 
+**Added by**: System Solution Solution
+
 Same as asyncoperation entity [accountleads_AsyncOperations](asyncoperation.md#BKMK_accountleads_AsyncOperations) Many-To-One relationship.
 
 |Property|Value|
@@ -230,6 +236,8 @@ Same as asyncoperation entity [accountleads_AsyncOperations](asyncoperation.md#B
 
 ### <a name="BKMK_accountleads_MailboxTrackingFolders"></a> accountleads_MailboxTrackingFolders
 
+**Added by**: System Solution Solution
+
 Same as mailboxtrackingfolder entity [accountleads_MailboxTrackingFolders](mailboxtrackingfolder.md#BKMK_accountleads_MailboxTrackingFolders) Many-To-One relationship.
 
 |Property|Value|
@@ -240,10 +248,12 @@ Same as mailboxtrackingfolder entity [accountleads_MailboxTrackingFolders](mailb
 |IsCustomizable|True|
 |ReferencedEntityNavigationPropertyName|accountleads_MailboxTrackingFolders|
 |AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
-|CascadeConfiguration|Assign: Cascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: Cascade<br />Share: Cascade<br />Unshare: Cascade|
+|CascadeConfiguration|Assign: NoCascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
 ### <a name="BKMK_accountleads_UserEntityInstanceDatas"></a> accountleads_UserEntityInstanceDatas
+
+**Added by**: System Solution Solution
 
 Same as userentityinstancedata entity [accountleads_UserEntityInstanceDatas](userentityinstancedata.md#BKMK_accountleads_UserEntityInstanceDatas) Many-To-One relationship.
 
@@ -260,6 +270,8 @@ Same as userentityinstancedata entity [accountleads_UserEntityInstanceDatas](use
 
 ### <a name="BKMK_accountleads_BulkDeleteFailures"></a> accountleads_BulkDeleteFailures
 
+**Added by**: System Solution Solution
+
 Same as bulkdeletefailure entity [accountleads_BulkDeleteFailures](bulkdeletefailure.md#BKMK_accountleads_BulkDeleteFailures) Many-To-One relationship.
 
 |Property|Value|
@@ -274,6 +286,8 @@ Same as bulkdeletefailure entity [accountleads_BulkDeleteFailures](bulkdeletefai
 
 
 ### <a name="BKMK_accountleads_PrincipalObjectAttributeAccesses"></a> accountleads_PrincipalObjectAttributeAccesses
+
+**Added by**: System Solution Solution
 
 Same as principalobjectattributeaccess entity [accountleads_PrincipalObjectAttributeAccesses](principalobjectattributeaccess.md#BKMK_accountleads_PrincipalObjectAttributeAccesses) Many-To-One relationship.
 
@@ -301,6 +315,6 @@ See account Entity [accountleads_association](account.md#BKMK_accountleads_assoc
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.accountleads?text=accountleads EntityType" />

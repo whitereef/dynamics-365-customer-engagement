@@ -1,35 +1,37 @@
 ---
-title: "TopicModelExecutionHistory Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "TopicModelExecutionHistory Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the TopicModelExecutionHistory entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # TopicModelExecutionHistory Entity Reference
 
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
+
 Entity for Topic Model Execution History
 
-**Added by**: Service Solution<br />
+**Added by**: Service Solution
+
 
 ## Messages
 
 |Message|Web API Operation|SDK Assembly|
 |-|-|-|
-|Create|POST [*org URI*]/api/data/v9.0/topicmodelexecutionhistories<br />See [Create](../webapi/create-entity-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
-|Delete|DELETE [*org URI*]/api/data/v9.0/topicmodelexecutionhistories(*topicmodelexecutionhistoryid*)<br />See [Delete](../webapi/update-delete-entities-using-web-api.md#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
-|Retrieve|GET [*org URI*]/api/data/v9.0/topicmodelexecutionhistories(*topicmodelexecutionhistoryid*)<br />See [Retrieve](../webapi/retrieve-entity-using-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/topicmodelexecutionhistories<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
-|Update|PATCH [*org URI*]/api/data/v9.0/topicmodelexecutionhistories(*topicmodelexecutionhistoryid*)<br />See [Update](../webapi/update-delete-entities-using-web-api.md#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
+|Create|POST [*org URI*]/api/data/v9.0/topicmodelexecutionhistories<br />See [Create](/powerapps/developer/common-data-service/webapi/create-entity-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
+|Delete|DELETE [*org URI*]/api/data/v9.0/topicmodelexecutionhistories(*topicmodelexecutionhistoryid*)<br />See [Delete](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
+|Retrieve|GET [*org URI*]/api/data/v9.0/topicmodelexecutionhistories(*topicmodelexecutionhistoryid*)<br />See [Retrieve](/powerapps/developer/common-data-service/webapi/retrieve-entity-using-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/topicmodelexecutionhistories<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|Update|PATCH [*org URI*]/api/data/v9.0/topicmodelexecutionhistories(*topicmodelexecutionhistoryid*)<br />See [Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
 
 ## Entity Properties
 
@@ -398,7 +400,9 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Type|Integer|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [CreatedBy](#BKMK_CreatedBy)
@@ -475,7 +479,7 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 |DateTimeBehavior|UserLocal|
 |Description|Date and time when the record was created.|
 |DisplayName|Created On|
-|Format|DateOnly|
+|Format|DateAndTime|
 |IsValidForForm|True|
 |IsValidForRead|True|
 |LogicalName|createdon|
@@ -582,7 +586,7 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 |DateTimeBehavior|UserLocal|
 |Description|Date and time when the record was modified.|
 |DisplayName|Modified On|
-|Format|DateOnly|
+|Format|DateAndTime|
 |IsValidForForm|True|
 |IsValidForRead|True|
 |LogicalName|modifiedon|
@@ -729,6 +733,8 @@ Listed by **SchemaName**.
 
 ### <a name="BKMK_topicmodelexecutionhistory_SyncErrors"></a> topicmodelexecutionhistory_SyncErrors
 
+**Added by**: System Solution Solution
+
 Same as syncerror entity [topicmodelexecutionhistory_SyncErrors](syncerror.md#BKMK_topicmodelexecutionhistory_SyncErrors) Many-To-One relationship.
 
 |Property|Value|
@@ -743,6 +749,8 @@ Same as syncerror entity [topicmodelexecutionhistory_SyncErrors](syncerror.md#BK
 
 
 ### <a name="BKMK_topicmodelexecutionhistory_AsyncOperations"></a> topicmodelexecutionhistory_AsyncOperations
+
+**Added by**: System Solution Solution
 
 Same as asyncoperation entity [topicmodelexecutionhistory_AsyncOperations](asyncoperation.md#BKMK_topicmodelexecutionhistory_AsyncOperations) Many-To-One relationship.
 
@@ -759,6 +767,8 @@ Same as asyncoperation entity [topicmodelexecutionhistory_AsyncOperations](async
 
 ### <a name="BKMK_topicmodelexecutionhistory_MailboxTrackingFolders"></a> topicmodelexecutionhistory_MailboxTrackingFolders
 
+**Added by**: System Solution Solution
+
 Same as mailboxtrackingfolder entity [topicmodelexecutionhistory_MailboxTrackingFolders](mailboxtrackingfolder.md#BKMK_topicmodelexecutionhistory_MailboxTrackingFolders) Many-To-One relationship.
 
 |Property|Value|
@@ -773,6 +783,8 @@ Same as mailboxtrackingfolder entity [topicmodelexecutionhistory_MailboxTracking
 
 
 ### <a name="BKMK_topicmodelexecutionhistory_UserEntityInstanceDatas"></a> topicmodelexecutionhistory_UserEntityInstanceDatas
+
+**Added by**: System Solution Solution
 
 Same as userentityinstancedata entity [topicmodelexecutionhistory_UserEntityInstanceDatas](userentityinstancedata.md#BKMK_topicmodelexecutionhistory_UserEntityInstanceDatas) Many-To-One relationship.
 
@@ -789,6 +801,8 @@ Same as userentityinstancedata entity [topicmodelexecutionhistory_UserEntityInst
 
 ### <a name="BKMK_topicmodelexecutionhistory_BulkDeleteFailures"></a> topicmodelexecutionhistory_BulkDeleteFailures
 
+**Added by**: System Solution Solution
+
 Same as bulkdeletefailure entity [topicmodelexecutionhistory_BulkDeleteFailures](bulkdeletefailure.md#BKMK_topicmodelexecutionhistory_BulkDeleteFailures) Many-To-One relationship.
 
 |Property|Value|
@@ -803,6 +817,8 @@ Same as bulkdeletefailure entity [topicmodelexecutionhistory_BulkDeleteFailures]
 
 
 ### <a name="BKMK_topicmodelexecutionhistory_PrincipalObjectAttributeAccesses"></a> topicmodelexecutionhistory_PrincipalObjectAttributeAccesses
+
+**Added by**: System Solution Solution
 
 Same as principalobjectattributeaccess entity [topicmodelexecutionhistory_PrincipalObjectAttributeAccesses](principalobjectattributeaccess.md#BKMK_topicmodelexecutionhistory_PrincipalObjectAttributeAccesses) Many-To-One relationship.
 
@@ -848,21 +864,31 @@ Each Many-To-One relationship is defined by a corresponding One-To-Many relation
 
 ### <a name="BKMK_lk_topicmodelexecutionhistory_createdby"></a> lk_topicmodelexecutionhistory_createdby
 
+**Added by**: System Solution Solution
+
 See systemuser Entity [lk_topicmodelexecutionhistory_createdby](systemuser.md#BKMK_lk_topicmodelexecutionhistory_createdby) One-To-Many relationship.
 
 ### <a name="BKMK_lk_topicmodelexecutionhistory_createdonbehalfby"></a> lk_topicmodelexecutionhistory_createdonbehalfby
+
+**Added by**: System Solution Solution
 
 See systemuser Entity [lk_topicmodelexecutionhistory_createdonbehalfby](systemuser.md#BKMK_lk_topicmodelexecutionhistory_createdonbehalfby) One-To-Many relationship.
 
 ### <a name="BKMK_lk_topicmodelexecutionhistory_modifiedby"></a> lk_topicmodelexecutionhistory_modifiedby
 
+**Added by**: System Solution Solution
+
 See systemuser Entity [lk_topicmodelexecutionhistory_modifiedby](systemuser.md#BKMK_lk_topicmodelexecutionhistory_modifiedby) One-To-Many relationship.
 
 ### <a name="BKMK_lk_topicmodelexecutionhistory_modifiedonbehalfby"></a> lk_topicmodelexecutionhistory_modifiedonbehalfby
 
+**Added by**: System Solution Solution
+
 See systemuser Entity [lk_topicmodelexecutionhistory_modifiedonbehalfby](systemuser.md#BKMK_lk_topicmodelexecutionhistory_modifiedonbehalfby) One-To-Many relationship.
 
 ### <a name="BKMK_organization_topicmodelexecutionhistory"></a> organization_topicmodelexecutionhistory
+
+**Added by**: System Solution Solution
 
 See organization Entity [organization_topicmodelexecutionhistory](organization.md#BKMK_organization_topicmodelexecutionhistory) One-To-Many relationship.
 
@@ -877,6 +903,6 @@ See topicmodelconfiguration Entity [topicmodelconfiguration_topicmodelexecutionh
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.topicmodelexecutionhistory?text=topicmodelexecutionhistory EntityType" />

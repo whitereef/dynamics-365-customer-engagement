@@ -1,35 +1,37 @@
 ---
-title: "TopicModelConfiguration Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "TopicModelConfiguration Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the TopicModelConfiguration entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # TopicModelConfiguration Entity Reference
 
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
+
 Configuration settings for identification of topics using text analytics.
 
-**Added by**: Service Solution<br />
+**Added by**: Service Solution
+
 
 ## Messages
 
 |Message|Web API Operation|SDK Assembly|
 |-|-|-|
-|Create|POST [*org URI*]/api/data/v9.0/topicmodelconfigurations<br />See [Create](../webapi/create-entity-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
-|Delete|DELETE [*org URI*]/api/data/v9.0/topicmodelconfigurations(*topicmodelconfigurationid*)<br />See [Delete](../webapi/update-delete-entities-using-web-api.md#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
-|Retrieve|GET [*org URI*]/api/data/v9.0/topicmodelconfigurations(*topicmodelconfigurationid*)<br />See [Retrieve](../webapi/retrieve-entity-using-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/topicmodelconfigurations<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
-|Update|PATCH [*org URI*]/api/data/v9.0/topicmodelconfigurations(*topicmodelconfigurationid*)<br />See [Update](../webapi/update-delete-entities-using-web-api.md#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
+|Create|POST [*org URI*]/api/data/v9.0/topicmodelconfigurations<br />See [Create](/powerapps/developer/common-data-service/webapi/create-entity-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
+|Delete|DELETE [*org URI*]/api/data/v9.0/topicmodelconfigurations(*topicmodelconfigurationid*)<br />See [Delete](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
+|Retrieve|GET [*org URI*]/api/data/v9.0/topicmodelconfigurations(*topicmodelconfigurationid*)<br />See [Retrieve](/powerapps/developer/common-data-service/webapi/retrieve-entity-using-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/topicmodelconfigurations<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|Update|PATCH [*org URI*]/api/data/v9.0/topicmodelconfigurations(*topicmodelconfigurationid*)<br />See [Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
 
 ## Entity Properties
 
@@ -262,7 +264,7 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |IsValidForRead|True|
 |LogicalName|timefilterduration|
 |MaxValue|2147483647|
-|MinValue|-2147483648|
+|MinValue|-1|
 |RequiredLevel|ApplicationRequired|
 |Type|Integer|
 
@@ -327,7 +329,9 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Type|Integer|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [ComponentState](#BKMK_ComponentState)
@@ -463,7 +467,7 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 
 |Property|Value|
 |--------|-----|
-|Description|Unique identifier of the Topic Model Configuration used when synchronizing customizations for the Microsoft Dynamics 365 for Customer Engagement client for Outlook|
+|Description|Unique identifier of the Topic Model Configuration used when synchronizing customizations for the Microsoft Dynamics 365 client for Outlook|
 |DisplayName|Topic Model Configuration Unique Id|
 |IsValidForForm|False|
 |IsValidForRead|True|
@@ -521,6 +525,8 @@ Listed by **SchemaName**.
 
 ### <a name="BKMK_topicmodelconfiguration_SyncErrors"></a> topicmodelconfiguration_SyncErrors
 
+**Added by**: System Solution Solution
+
 Same as syncerror entity [topicmodelconfiguration_SyncErrors](syncerror.md#BKMK_topicmodelconfiguration_SyncErrors) Many-To-One relationship.
 
 |Property|Value|
@@ -535,6 +541,8 @@ Same as syncerror entity [topicmodelconfiguration_SyncErrors](syncerror.md#BKMK_
 
 
 ### <a name="BKMK_topicmodelconfiguration_AsyncOperations"></a> topicmodelconfiguration_AsyncOperations
+
+**Added by**: System Solution Solution
 
 Same as asyncoperation entity [topicmodelconfiguration_AsyncOperations](asyncoperation.md#BKMK_topicmodelconfiguration_AsyncOperations) Many-To-One relationship.
 
@@ -551,6 +559,8 @@ Same as asyncoperation entity [topicmodelconfiguration_AsyncOperations](asyncope
 
 ### <a name="BKMK_topicmodelconfiguration_MailboxTrackingFolders"></a> topicmodelconfiguration_MailboxTrackingFolders
 
+**Added by**: System Solution Solution
+
 Same as mailboxtrackingfolder entity [topicmodelconfiguration_MailboxTrackingFolders](mailboxtrackingfolder.md#BKMK_topicmodelconfiguration_MailboxTrackingFolders) Many-To-One relationship.
 
 |Property|Value|
@@ -565,6 +575,8 @@ Same as mailboxtrackingfolder entity [topicmodelconfiguration_MailboxTrackingFol
 
 
 ### <a name="BKMK_topicmodelconfiguration_UserEntityInstanceDatas"></a> topicmodelconfiguration_UserEntityInstanceDatas
+
+**Added by**: System Solution Solution
 
 Same as userentityinstancedata entity [topicmodelconfiguration_UserEntityInstanceDatas](userentityinstancedata.md#BKMK_topicmodelconfiguration_UserEntityInstanceDatas) Many-To-One relationship.
 
@@ -581,6 +593,8 @@ Same as userentityinstancedata entity [topicmodelconfiguration_UserEntityInstanc
 
 ### <a name="BKMK_topicmodelconfiguration_BulkDeleteFailures"></a> topicmodelconfiguration_BulkDeleteFailures
 
+**Added by**: System Solution Solution
+
 Same as bulkdeletefailure entity [topicmodelconfiguration_BulkDeleteFailures](bulkdeletefailure.md#BKMK_topicmodelconfiguration_BulkDeleteFailures) Many-To-One relationship.
 
 |Property|Value|
@@ -595,6 +609,8 @@ Same as bulkdeletefailure entity [topicmodelconfiguration_BulkDeleteFailures](bu
 
 
 ### <a name="BKMK_topicmodelconfiguration_PrincipalObjectAttributeAccesses"></a> topicmodelconfiguration_PrincipalObjectAttributeAccesses
+
+**Added by**: System Solution Solution
 
 Same as principalobjectattributeaccess entity [topicmodelconfiguration_PrincipalObjectAttributeAccesses](principalobjectattributeaccess.md#BKMK_topicmodelconfiguration_PrincipalObjectAttributeAccesses) Many-To-One relationship.
 
@@ -665,6 +681,8 @@ Each Many-To-One relationship is defined by a corresponding One-To-Many relation
 
 ### <a name="BKMK_organization_topicmodelconfiguration"></a> organization_topicmodelconfiguration
 
+**Added by**: System Solution Solution
+
 See organization Entity [organization_topicmodelconfiguration](organization.md#BKMK_organization_topicmodelconfiguration) One-To-Many relationship.
 
 ### <a name="BKMK_topicmodel_topicmodelconfiguration"></a> topicmodel_topicmodelconfiguration
@@ -674,6 +692,6 @@ See topicmodel Entity [topicmodel_topicmodelconfiguration](topicmodel.md#BKMK_to
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.topicmodelconfiguration?text=topicmodelconfiguration EntityType" />

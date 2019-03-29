@@ -1,41 +1,42 @@
 ---
-title: "ExternalParty Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "ExternalParty Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the ExternalParty entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # ExternalParty Entity Reference
 
-Information about external parties that need to access Dynamics 365 for Customer Engagement apps from external channels.For internal use only
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
+
+Information about external parties that need to access Dynamics 365 from external channels.For internal use only
 
 
 ## Messages
 
 |Message|Web API Operation|SDK Assembly|
 |-|-|-|
-|Assign|PATCH [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />[Update](../webapi/update-delete-entities-using-web-api.md#basic-update) `ownerid` property.|<xref:Microsoft.Crm.Sdk.Messages.AssignRequest>|
-|Create|POST [*org URI*]/api/data/v9.0/externalparties<br />See [Create](../webapi/create-entity-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
-|Delete|DELETE [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />See [Delete](../webapi/update-delete-entities-using-web-api.md#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
+|Assign|PATCH [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />[Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update) `ownerid` property.|<xref:Microsoft.Crm.Sdk.Messages.AssignRequest>|
+|Create|POST [*org URI*]/api/data/v9.0/externalparties<br />See [Create](/powerapps/developer/common-data-service/webapi/create-entity-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
+|Delete|DELETE [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />See [Delete](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
 |GrantAccess|<xref href="Microsoft.Dynamics.CRM.GrantAccess?text=GrantAccess Action" />|<xref:Microsoft.Crm.Sdk.Messages.GrantAccessRequest>|
 |ModifyAccess|<xref href="Microsoft.Dynamics.CRM.ModifyAccess?text=ModifyAccess Action" />|<xref:Microsoft.Crm.Sdk.Messages.ModifyAccessRequest>|
-|Retrieve|GET [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />See [Retrieve](../webapi/retrieve-entity-using-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/externalparties<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|Retrieve|GET [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />See [Retrieve](/powerapps/developer/common-data-service/webapi/retrieve-entity-using-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/externalparties<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
 |RetrievePrincipalAccess|<xref href="Microsoft.Dynamics.CRM.RetrievePrincipalAccess?text=RetrievePrincipalAccess Function" />|<xref:Microsoft.Crm.Sdk.Messages.RetrievePrincipalAccessRequest>|
 |RetrieveSharedPrincipalsAndAccess|<xref href="Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess?text=RetrieveSharedPrincipalsAndAccess Function" />|<xref:Microsoft.Crm.Sdk.Messages.RetrieveSharedPrincipalsAndAccessRequest>|
 |RevokeAccess|<xref href="Microsoft.Dynamics.CRM.RevokeAccess?text=RevokeAccess Action" />|<xref:Microsoft.Crm.Sdk.Messages.RevokeAccessRequest>|
-|SetState|PATCH [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />[Update](../webapi/update-delete-entities-using-web-api.md#basic-update) `statecode` and `statuscode` properties.|<xref:Microsoft.Crm.Sdk.Messages.SetStateRequest>|
-|Update|PATCH [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />See [Update](../webapi/update-delete-entities-using-web-api.md#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
+|SetState|PATCH [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />[Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update) `statecode` and `statuscode` properties.|<xref:Microsoft.Crm.Sdk.Messages.SetStateRequest>|
+|Update|PATCH [*org URI*]/api/data/v9.0/externalparties(*externalpartyid*)<br />See [Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
 
 ## Entity Properties
 
@@ -436,7 +437,9 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Type|String|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [CreatedBy](#BKMK_CreatedBy)
@@ -592,7 +595,7 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 
 |Property|Value|
 |--------|-----|
-|Description|Unique identifier of the External Party used when synchronizing customizations for the Microsoft Dynamics 365 for Customer Engagement client for Outlook|
+|Description|Unique identifier of the External Party used when synchronizing customizations for the Microsoft Dynamics 365 client for Outlook|
 |DisplayName|External Party Unique Id|
 |IsValidForForm|False|
 |IsValidForRead|True|
@@ -866,6 +869,8 @@ Listed by **SchemaName**.
 
 ### <a name="BKMK_lk_externalparty_product_createdby"></a> lk_externalparty_product_createdby
 
+**Added by**: Product Management Solution
+
 Same as product entity [lk_externalparty_product_createdby](product.md#BKMK_lk_externalparty_product_createdby) Many-To-One relationship.
 
 |Property|Value|
@@ -880,6 +885,8 @@ Same as product entity [lk_externalparty_product_createdby](product.md#BKMK_lk_e
 
 
 ### <a name="BKMK_lk_externalparty_product_modifiedby"></a> lk_externalparty_product_modifiedby
+
+**Added by**: Product Management Solution
 
 Same as product entity [lk_externalparty_product_modifiedby](product.md#BKMK_lk_externalparty_product_modifiedby) Many-To-One relationship.
 
@@ -896,6 +903,8 @@ Same as product entity [lk_externalparty_product_modifiedby](product.md#BKMK_lk_
 
 ### <a name="BKMK_lk_externalparty_uom_createdby"></a> lk_externalparty_uom_createdby
 
+**Added by**: Product Management Solution
+
 Same as uom entity [lk_externalparty_uom_createdby](uom.md#BKMK_lk_externalparty_uom_createdby) Many-To-One relationship.
 
 |Property|Value|
@@ -910,6 +919,8 @@ Same as uom entity [lk_externalparty_uom_createdby](uom.md#BKMK_lk_externalparty
 
 
 ### <a name="BKMK_lk_externalparty_uom_modifiedby"></a> lk_externalparty_uom_modifiedby
+
+**Added by**: Product Management Solution
 
 Same as uom entity [lk_externalparty_uom_modifiedby](uom.md#BKMK_lk_externalparty_uom_modifiedby) Many-To-One relationship.
 
@@ -926,6 +937,8 @@ Same as uom entity [lk_externalparty_uom_modifiedby](uom.md#BKMK_lk_externalpart
 
 ### <a name="BKMK_lk_externalparty_uomschedule_createdby"></a> lk_externalparty_uomschedule_createdby
 
+**Added by**: Product Management Solution
+
 Same as uomschedule entity [lk_externalparty_uomschedule_createdby](uomschedule.md#BKMK_lk_externalparty_uomschedule_createdby) Many-To-One relationship.
 
 |Property|Value|
@@ -940,6 +953,8 @@ Same as uomschedule entity [lk_externalparty_uomschedule_createdby](uomschedule.
 
 
 ### <a name="BKMK_lk_externalparty_uomschedule_modifiedby"></a> lk_externalparty_uomschedule_modifiedby
+
+**Added by**: Product Management Solution
 
 Same as uomschedule entity [lk_externalparty_uomschedule_modifiedby](uomschedule.md#BKMK_lk_externalparty_uomschedule_modifiedby) Many-To-One relationship.
 
@@ -956,6 +971,8 @@ Same as uomschedule entity [lk_externalparty_uomschedule_modifiedby](uomschedule
 
 ### <a name="BKMK_lk_externalparty_incident_createdby"></a> lk_externalparty_incident_createdby
 
+**Added by**: Service Solution
+
 Same as incident entity [lk_externalparty_incident_createdby](incident.md#BKMK_lk_externalparty_incident_createdby) Many-To-One relationship.
 
 |Property|Value|
@@ -970,6 +987,8 @@ Same as incident entity [lk_externalparty_incident_createdby](incident.md#BKMK_l
 
 
 ### <a name="BKMK_lk_externalparty_incident_modifiedby"></a> lk_externalparty_incident_modifiedby
+
+**Added by**: Service Solution
 
 Same as incident entity [lk_externalparty_incident_modifiedby](incident.md#BKMK_lk_externalparty_incident_modifiedby) Many-To-One relationship.
 
@@ -986,6 +1005,8 @@ Same as incident entity [lk_externalparty_incident_modifiedby](incident.md#BKMK_
 
 ### <a name="BKMK_lk_externalparty_incidentresolution_createdby"></a> lk_externalparty_incidentresolution_createdby
 
+**Added by**: Service Solution
+
 Same as incidentresolution entity [lk_externalparty_incidentresolution_createdby](incidentresolution.md#BKMK_lk_externalparty_incidentresolution_createdby) Many-To-One relationship.
 
 |Property|Value|
@@ -1000,6 +1021,8 @@ Same as incidentresolution entity [lk_externalparty_incidentresolution_createdby
 
 
 ### <a name="BKMK_lk_externalparty_incidentresolution_modifiedby"></a> lk_externalparty_incidentresolution_modifiedby
+
+**Added by**: Service Solution
 
 Same as incidentresolution entity [lk_externalparty_incidentresolution_modifiedby](incidentresolution.md#BKMK_lk_externalparty_incidentresolution_modifiedby) Many-To-One relationship.
 
@@ -1016,6 +1039,8 @@ Same as incidentresolution entity [lk_externalparty_incidentresolution_modifiedb
 
 ### <a name="BKMK_lk_externalparty_opportunityclose_createdby"></a> lk_externalparty_opportunityclose_createdby
 
+**Added by**: Sales Service Solution
+
 Same as opportunityclose entity [lk_externalparty_opportunityclose_createdby](opportunityclose.md#BKMK_lk_externalparty_opportunityclose_createdby) Many-To-One relationship.
 
 |Property|Value|
@@ -1030,6 +1055,8 @@ Same as opportunityclose entity [lk_externalparty_opportunityclose_createdby](op
 
 
 ### <a name="BKMK_lk_externalparty_opportunityclose_modifiedby"></a> lk_externalparty_opportunityclose_modifiedby
+
+**Added by**: Sales Service Solution
 
 Same as opportunityclose entity [lk_externalparty_opportunityclose_modifiedby](opportunityclose.md#BKMK_lk_externalparty_opportunityclose_modifiedby) Many-To-One relationship.
 
@@ -1046,6 +1073,8 @@ Same as opportunityclose entity [lk_externalparty_opportunityclose_modifiedby](o
 
 ### <a name="BKMK_lk_externalparty_orderclose_createdby"></a> lk_externalparty_orderclose_createdby
 
+**Added by**: Sales Service Solution
+
 Same as orderclose entity [lk_externalparty_orderclose_createdby](orderclose.md#BKMK_lk_externalparty_orderclose_createdby) Many-To-One relationship.
 
 |Property|Value|
@@ -1060,6 +1089,8 @@ Same as orderclose entity [lk_externalparty_orderclose_createdby](orderclose.md#
 
 
 ### <a name="BKMK_lk_externalparty_orderclose_modifiedby"></a> lk_externalparty_orderclose_modifiedby
+
+**Added by**: Sales Service Solution
 
 Same as orderclose entity [lk_externalparty_orderclose_modifiedby](orderclose.md#BKMK_lk_externalparty_orderclose_modifiedby) Many-To-One relationship.
 
@@ -1076,6 +1107,8 @@ Same as orderclose entity [lk_externalparty_orderclose_modifiedby](orderclose.md
 
 ### <a name="BKMK_lk_externalparty_quoteclose_createdby"></a> lk_externalparty_quoteclose_createdby
 
+**Added by**: Sales Service Solution
+
 Same as quoteclose entity [lk_externalparty_quoteclose_createdby](quoteclose.md#BKMK_lk_externalparty_quoteclose_createdby) Many-To-One relationship.
 
 |Property|Value|
@@ -1090,6 +1123,8 @@ Same as quoteclose entity [lk_externalparty_quoteclose_createdby](quoteclose.md#
 
 
 ### <a name="BKMK_lk_externalparty_quoteclose_modifiedby"></a> lk_externalparty_quoteclose_modifiedby
+
+**Added by**: Sales Service Solution
 
 Same as quoteclose entity [lk_externalparty_quoteclose_modifiedby](quoteclose.md#BKMK_lk_externalparty_quoteclose_modifiedby) Many-To-One relationship.
 
@@ -1334,6 +1369,6 @@ See transactioncurrency Entity [TransactionCurrency_ExternalParty](transactioncu
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.externalparty?text=externalparty EntityType" />

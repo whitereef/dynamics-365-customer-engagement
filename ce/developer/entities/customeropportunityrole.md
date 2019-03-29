@@ -1,41 +1,43 @@
 ---
-title: "CustomerOpportunityRole Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "CustomerOpportunityRole Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the CustomerOpportunityRole entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # CustomerOpportunityRole Entity Reference
 
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
+
 Relationship between an account or contact and an opportunity.
 
-**Added by**: Sales Solution<br />
+**Added by**: Sales Solution
+
 
 ## Messages
 
 |Message|Web API Operation|SDK Assembly|
 |-|-|-|
-|Assign|PATCH [*org URI*]/api/data/v9.0/customeropportunityroles(*customeropportunityroleid*)<br />[Update](../webapi/update-delete-entities-using-web-api.md#basic-update) `ownerid` property.|<xref:Microsoft.Crm.Sdk.Messages.AssignRequest>|
-|Create|POST [*org URI*]/api/data/v9.0/customeropportunityroles<br />See [Create](../webapi/create-entity-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
-|Delete|DELETE [*org URI*]/api/data/v9.0/customeropportunityroles(*customeropportunityroleid*)<br />See [Delete](../webapi/update-delete-entities-using-web-api.md#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
+|Assign|PATCH [*org URI*]/api/data/v9.0/customeropportunityroles(*customeropportunityroleid*)<br />[Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update) `ownerid` property.|<xref:Microsoft.Crm.Sdk.Messages.AssignRequest>|
+|Create|POST [*org URI*]/api/data/v9.0/customeropportunityroles<br />See [Create](/powerapps/developer/common-data-service/webapi/create-entity-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
+|Delete|DELETE [*org URI*]/api/data/v9.0/customeropportunityroles(*customeropportunityroleid*)<br />See [Delete](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
 |GrantAccess|<xref href="Microsoft.Dynamics.CRM.GrantAccess?text=GrantAccess Action" />|<xref:Microsoft.Crm.Sdk.Messages.GrantAccessRequest>|
 |ModifyAccess|<xref href="Microsoft.Dynamics.CRM.ModifyAccess?text=ModifyAccess Action" />|<xref:Microsoft.Crm.Sdk.Messages.ModifyAccessRequest>|
-|Retrieve|GET [*org URI*]/api/data/v9.0/customeropportunityroles(*customeropportunityroleid*)<br />See [Retrieve](../webapi/retrieve-entity-using-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/customeropportunityroles<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|Retrieve|GET [*org URI*]/api/data/v9.0/customeropportunityroles(*customeropportunityroleid*)<br />See [Retrieve](/powerapps/developer/common-data-service/webapi/retrieve-entity-using-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/customeropportunityroles<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
 |RetrievePrincipalAccess|<xref href="Microsoft.Dynamics.CRM.RetrievePrincipalAccess?text=RetrievePrincipalAccess Function" />|<xref:Microsoft.Crm.Sdk.Messages.RetrievePrincipalAccessRequest>|
 |RetrieveSharedPrincipalsAndAccess|<xref href="Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess?text=RetrieveSharedPrincipalsAndAccess Function" />|<xref:Microsoft.Crm.Sdk.Messages.RetrieveSharedPrincipalsAndAccessRequest>|
 |RevokeAccess|<xref href="Microsoft.Dynamics.CRM.RevokeAccess?text=RevokeAccess Action" />|<xref:Microsoft.Crm.Sdk.Messages.RevokeAccessRequest>|
-|Update|PATCH [*org URI*]/api/data/v9.0/customeropportunityroles(*customeropportunityroleid*)<br />See [Update](../webapi/update-delete-entities-using-web-api.md#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
+|Update|PATCH [*org URI*]/api/data/v9.0/customeropportunityroles(*customeropportunityroleid*)<br />See [Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
 
 ## Entity Properties
 
@@ -88,6 +90,8 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 
 
 ### <a name="BKMK_CustomerIdType"></a> CustomerIdType
+
+**Added by**: Active Solution Solution
 
 |Property|Value|
 |--------|-----|
@@ -207,6 +211,8 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 
 ### <a name="BKMK_OwnerIdType"></a> OwnerIdType
 
+**Added by**: Active Solution Solution
+
 |Property|Value|
 |--------|-----|
 |Description|Owner Id Type|
@@ -250,7 +256,9 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Type|Integer|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [CreatedBy](#BKMK_CreatedBy)
@@ -300,7 +308,7 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 
 |Property|Value|
 |--------|-----|
-|Description|Name of the user who created the opportunity relationship.|
+|Description||
 |DisplayName||
 |FormatName|Text|
 |IsLocalizable|False|
@@ -333,7 +341,7 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 |Property|Value|
 |--------|-----|
 |DateTimeBehavior|UserLocal|
-|Description|Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 for Customer Engagement apps options.|
+|Description|Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.|
 |DisplayName|Created On|
 |Format|DateAndTime|
 |IsValidForForm|True|
@@ -439,7 +447,7 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 
 |Property|Value|
 |--------|-----|
-|Description|Name of the user who last modified the opportunity relationship.|
+|Description||
 |DisplayName||
 |FormatName|Text|
 |IsLocalizable|False|
@@ -472,7 +480,7 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 |Property|Value|
 |--------|-----|
 |DateTimeBehavior|UserLocal|
-|Description|Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 for Customer Engagement apps options.|
+|Description|Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.|
 |DisplayName|Modified On|
 |Format|DateAndTime|
 |IsValidForForm|True|
@@ -710,6 +718,8 @@ Listed by **SchemaName**.
 
 ### <a name="BKMK_CustomerOpportunityRole_SyncErrors"></a> CustomerOpportunityRole_SyncErrors
 
+**Added by**: System Solution Solution
+
 Same as syncerror entity [CustomerOpportunityRole_SyncErrors](syncerror.md#BKMK_CustomerOpportunityRole_SyncErrors) Many-To-One relationship.
 
 |Property|Value|
@@ -724,6 +734,8 @@ Same as syncerror entity [CustomerOpportunityRole_SyncErrors](syncerror.md#BKMK_
 
 
 ### <a name="BKMK_CustomerOpportunityRole_AsyncOperations"></a> CustomerOpportunityRole_AsyncOperations
+
+**Added by**: System Solution Solution
 
 Same as asyncoperation entity [CustomerOpportunityRole_AsyncOperations](asyncoperation.md#BKMK_CustomerOpportunityRole_AsyncOperations) Many-To-One relationship.
 
@@ -740,6 +752,8 @@ Same as asyncoperation entity [CustomerOpportunityRole_AsyncOperations](asyncope
 
 ### <a name="BKMK_customeropportunityrole_MailboxTrackingFolders"></a> customeropportunityrole_MailboxTrackingFolders
 
+**Added by**: System Solution Solution
+
 Same as mailboxtrackingfolder entity [customeropportunityrole_MailboxTrackingFolders](mailboxtrackingfolder.md#BKMK_customeropportunityrole_MailboxTrackingFolders) Many-To-One relationship.
 
 |Property|Value|
@@ -750,10 +764,12 @@ Same as mailboxtrackingfolder entity [customeropportunityrole_MailboxTrackingFol
 |IsCustomizable|True|
 |ReferencedEntityNavigationPropertyName|customeropportunityrole_MailboxTrackingFolders|
 |AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
-|CascadeConfiguration|Assign: Cascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: Cascade<br />Share: Cascade<br />Unshare: Cascade|
+|CascadeConfiguration|Assign: NoCascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
 ### <a name="BKMK_userentityinstancedata_customeropportunityrole"></a> userentityinstancedata_customeropportunityrole
+
+**Added by**: System Solution Solution
 
 Same as userentityinstancedata entity [userentityinstancedata_customeropportunityrole](userentityinstancedata.md#BKMK_userentityinstancedata_customeropportunityrole) Many-To-One relationship.
 
@@ -770,6 +786,8 @@ Same as userentityinstancedata entity [userentityinstancedata_customeropportunit
 
 ### <a name="BKMK_CustomerOpportunityRole_ProcessSessions"></a> CustomerOpportunityRole_ProcessSessions
 
+**Added by**: System Solution Solution
+
 Same as processsession entity [CustomerOpportunityRole_ProcessSessions](processsession.md#BKMK_CustomerOpportunityRole_ProcessSessions) Many-To-One relationship.
 
 |Property|Value|
@@ -785,6 +803,8 @@ Same as processsession entity [CustomerOpportunityRole_ProcessSessions](processs
 
 ### <a name="BKMK_CustomerOpportunityRole_BulkDeleteFailures"></a> CustomerOpportunityRole_BulkDeleteFailures
 
+**Added by**: System Solution Solution
+
 Same as bulkdeletefailure entity [CustomerOpportunityRole_BulkDeleteFailures](bulkdeletefailure.md#BKMK_CustomerOpportunityRole_BulkDeleteFailures) Many-To-One relationship.
 
 |Property|Value|
@@ -799,6 +819,8 @@ Same as bulkdeletefailure entity [CustomerOpportunityRole_BulkDeleteFailures](bu
 
 
 ### <a name="BKMK_customeropportunityrole_PrincipalObjectAttributeAccesses"></a> customeropportunityrole_PrincipalObjectAttributeAccesses
+
+**Added by**: System Solution Solution
 
 Same as principalobjectattributeaccess entity [customeropportunityrole_PrincipalObjectAttributeAccesses](principalobjectattributeaccess.md#BKMK_customeropportunityrole_PrincipalObjectAttributeAccesses) Many-To-One relationship.
 
@@ -833,37 +855,55 @@ Each Many-To-One relationship is defined by a corresponding One-To-Many relation
 
 ### <a name="BKMK_lk_customeropportunityrole_createdby"></a> lk_customeropportunityrole_createdby
 
+**Added by**: System Solution Solution
+
 See systemuser Entity [lk_customeropportunityrole_createdby](systemuser.md#BKMK_lk_customeropportunityrole_createdby) One-To-Many relationship.
 
 ### <a name="BKMK_lk_customeropportunityrole_createdonbehalfby"></a> lk_customeropportunityrole_createdonbehalfby
+
+**Added by**: System Solution Solution
 
 See systemuser Entity [lk_customeropportunityrole_createdonbehalfby](systemuser.md#BKMK_lk_customeropportunityrole_createdonbehalfby) One-To-Many relationship.
 
 ### <a name="BKMK_lk_customeropportunityrole_modifiedby"></a> lk_customeropportunityrole_modifiedby
 
+**Added by**: System Solution Solution
+
 See systemuser Entity [lk_customeropportunityrole_modifiedby](systemuser.md#BKMK_lk_customeropportunityrole_modifiedby) One-To-Many relationship.
 
 ### <a name="BKMK_lk_customeropportunityrole_modifiedonbehalfby"></a> lk_customeropportunityrole_modifiedonbehalfby
+
+**Added by**: System Solution Solution
 
 See systemuser Entity [lk_customeropportunityrole_modifiedonbehalfby](systemuser.md#BKMK_lk_customeropportunityrole_modifiedonbehalfby) One-To-Many relationship.
 
 ### <a name="BKMK_user_customer_opportunity_roles"></a> user_customer_opportunity_roles
 
+**Added by**: System Solution Solution
+
 See systemuser Entity [user_customer_opportunity_roles](systemuser.md#BKMK_user_customer_opportunity_roles) One-To-Many relationship.
 
 ### <a name="BKMK_team_customer_opportunity_roles"></a> team_customer_opportunity_roles
+
+**Added by**: System Solution Solution
 
 See team Entity [team_customer_opportunity_roles](team.md#BKMK_team_customer_opportunity_roles) One-To-Many relationship.
 
 ### <a name="BKMK_business_customer_opportunity_roles"></a> business_customer_opportunity_roles
 
+**Added by**: System Solution Solution
+
 See businessunit Entity [business_customer_opportunity_roles](businessunit.md#BKMK_business_customer_opportunity_roles) One-To-Many relationship.
 
 ### <a name="BKMK_account_customer_opportunity_roles"></a> account_customer_opportunity_roles
 
+**Added by**: System Solution Solution
+
 See account Entity [account_customer_opportunity_roles](account.md#BKMK_account_customer_opportunity_roles) One-To-Many relationship.
 
 ### <a name="BKMK_contact_customer_opportunity_roles"></a> contact_customer_opportunity_roles
+
+**Added by**: System Solution Solution
 
 See contact Entity [contact_customer_opportunity_roles](contact.md#BKMK_contact_customer_opportunity_roles) One-To-Many relationship.
 
@@ -873,11 +913,13 @@ See opportunity Entity [opportunity_customer_opportunity_roles](opportunity.md#B
 
 ### <a name="BKMK_relationship_role_customer_opportunity_roles"></a> relationship_role_customer_opportunity_roles
 
+**Added by**: System Solution Solution
+
 See relationshiprole Entity [relationship_role_customer_opportunity_roles](relationshiprole.md#BKMK_relationship_role_customer_opportunity_roles) One-To-Many relationship.
 
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.customeropportunityrole?text=customeropportunityrole EntityType" />

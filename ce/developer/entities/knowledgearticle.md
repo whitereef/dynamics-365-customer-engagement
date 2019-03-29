@@ -1,21 +1,22 @@
 ---
-title: "KnowledgeArticle Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "KnowledgeArticle Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the KnowledgeArticle entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # KnowledgeArticle Entity Reference
+
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
 
 Organizational knowledge for internal and external use.
 
@@ -24,21 +25,21 @@ Organizational knowledge for internal and external use.
 
 |Message|Web API Operation|SDK Assembly|
 |-|-|-|
-|Assign|PATCH [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />[Update](../webapi/update-delete-entities-using-web-api.md#basic-update) `ownerid` property.|<xref:Microsoft.Crm.Sdk.Messages.AssignRequest>|
-|Create|POST [*org URI*]/api/data/v9.0/knowledgearticles<br />See [Create](../webapi/create-entity-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
+|Assign|PATCH [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />[Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update) `ownerid` property.|<xref:Microsoft.Crm.Sdk.Messages.AssignRequest>|
+|Create|POST [*org URI*]/api/data/v9.0/knowledgearticles<br />See [Create](/powerapps/developer/common-data-service/webapi/create-entity-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
 |CreateKnowledgeArticleTranslation|<xref href="Microsoft.Dynamics.CRM.CreateKnowledgeArticleTranslation?text=CreateKnowledgeArticleTranslation Action" />|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleTranslationRequest>|
 |CreateKnowledgeArticleVersion|<xref href="Microsoft.Dynamics.CRM.CreateKnowledgeArticleVersion?text=CreateKnowledgeArticleVersion Action" />|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleVersionRequest>|
-|Delete|DELETE [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />See [Delete](../webapi/update-delete-entities-using-web-api.md#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
+|Delete|DELETE [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />See [Delete](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
 |FullTextSearchKnowledgeArticle|<xref href="Microsoft.Dynamics.CRM.FullTextSearchKnowledgeArticle?text=FullTextSearchKnowledgeArticle Action" />|<xref:Microsoft.Crm.Sdk.Messages.FullTextSearchKnowledgeArticleRequest>|
 |GrantAccess|<xref href="Microsoft.Dynamics.CRM.GrantAccess?text=GrantAccess Action" />|<xref:Microsoft.Crm.Sdk.Messages.GrantAccessRequest>|
 |ModifyAccess|<xref href="Microsoft.Dynamics.CRM.ModifyAccess?text=ModifyAccess Action" />|<xref:Microsoft.Crm.Sdk.Messages.ModifyAccessRequest>|
-|Retrieve|GET [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />See [Retrieve](../webapi/retrieve-entity-using-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/knowledgearticles<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|Retrieve|GET [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />See [Retrieve](/powerapps/developer/common-data-service/webapi/retrieve-entity-using-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/knowledgearticles<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
 |RetrievePrincipalAccess|<xref href="Microsoft.Dynamics.CRM.RetrievePrincipalAccess?text=RetrievePrincipalAccess Function" />|<xref:Microsoft.Crm.Sdk.Messages.RetrievePrincipalAccessRequest>|
 |RetrieveSharedPrincipalsAndAccess|<xref href="Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess?text=RetrieveSharedPrincipalsAndAccess Function" />|<xref:Microsoft.Crm.Sdk.Messages.RetrieveSharedPrincipalsAndAccessRequest>|
 |RevokeAccess|<xref href="Microsoft.Dynamics.CRM.RevokeAccess?text=RevokeAccess Action" />|<xref:Microsoft.Crm.Sdk.Messages.RevokeAccessRequest>|
-|SetState|PATCH [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />[Update](../webapi/update-delete-entities-using-web-api.md#basic-update) `statecode` and `statuscode` properties.|<xref:Microsoft.Crm.Sdk.Messages.SetStateRequest>|
-|Update|PATCH [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />See [Update](../webapi/update-delete-entities-using-web-api.md#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
+|SetState|PATCH [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />[Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update) `statecode` and `statuscode` properties.|<xref:Microsoft.Crm.Sdk.Messages.SetStateRequest>|
+|Update|PATCH [*org URI*]/api/data/v9.0/knowledgearticles(*knowledgearticleid*)<br />See [Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
 
 ## Entity Properties
 
@@ -116,6 +117,7 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |IsLocalizable|False|
 |IsValidForForm|True|
 |IsValidForRead|True|
+|IsValidForUpdate|False|
 |LogicalName|articlepublicnumber|
 |MaxLength|4000|
 |RequiredLevel|SystemRequired|
@@ -130,7 +132,7 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |DisplayName|Content|
 |Format|TextArea|
 |IsLocalizable|False|
-|IsValidForForm|False|
+|IsValidForForm|True|
 |IsValidForRead|True|
 |LogicalName|content|
 |MaxLength|1073741823|
@@ -638,6 +640,8 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 
 ### <a name="BKMK_SetProductAssociations"></a> SetProductAssociations
 
+**Added by**: Product Management Solution
+
 |Property|Value|
 |--------|-----|
 |Description|Set Product Associations|
@@ -797,7 +801,7 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Property|Value|
 |--------|-----|
 |Description|A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur.|
-|DisplayName|Traversed Path|
+|DisplayName|(Deprecated) Traversed Path|
 |FormatName|Text|
 |IsLocalizable|False|
 |IsValidForForm|False|
@@ -847,7 +851,9 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Type|Integer|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [CreatedBy](#BKMK_CreatedBy)
@@ -1486,7 +1492,6 @@ Listed by **SchemaName**.
 
 - [knowledgearticle_SharePointDocuments](#BKMK_knowledgearticle_SharePointDocuments)
 - [knowledgearticle_BulkOperations](#BKMK_knowledgearticle_BulkOperations)
-- [knowledgearticle_CampaignActivities](#BKMK_knowledgearticle_CampaignActivities)
 - [knowledgearticle_CampaignResponses](#BKMK_knowledgearticle_CampaignResponses)
 - [knowledgearticle_IncidentResolutions](#BKMK_knowledgearticle_IncidentResolutions)
 - [KnowledgeArticle_ServiceAppointments](#BKMK_KnowledgeArticle_ServiceAppointments)
@@ -1494,6 +1499,8 @@ Listed by **SchemaName**.
 - [knowledgearticle_OpportunityCloses](#BKMK_knowledgearticle_OpportunityCloses)
 - [knowledgearticle_OrderCloses](#BKMK_knowledgearticle_OrderCloses)
 - [knowledgearticle_QuoteCloses](#BKMK_knowledgearticle_QuoteCloses)
+- [knowledgearticle_msfp_surveyinvites](#BKMK_knowledgearticle_msfp_surveyinvites)
+- [knowledgearticle_msfp_surveyresponses](#BKMK_knowledgearticle_msfp_surveyresponses)
 - [knowledgearticle_msdyn_bookingalerts](#BKMK_knowledgearticle_msdyn_bookingalerts)
 - [knowledgearticle_msdyn_approvals](#BKMK_knowledgearticle_msdyn_approvals)
 - [knowledgearticle_connections1](#BKMK_knowledgearticle_connections1)
@@ -1548,6 +1555,8 @@ Same as sharepointdocument entity [knowledgearticle_SharePointDocuments](sharepo
 
 ### <a name="BKMK_knowledgearticle_BulkOperations"></a> knowledgearticle_BulkOperations
 
+**Added by**: Marketing Solution
+
 Same as bulkoperation entity [knowledgearticle_BulkOperations](bulkoperation.md#BKMK_knowledgearticle_BulkOperations) Many-To-One relationship.
 
 |Property|Value|
@@ -1561,22 +1570,9 @@ Same as bulkoperation entity [knowledgearticle_BulkOperations](bulkoperation.md#
 |CascadeConfiguration|Assign: Cascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: Cascade<br />Share: Cascade<br />Unshare: Cascade|
 
 
-### <a name="BKMK_knowledgearticle_CampaignActivities"></a> knowledgearticle_CampaignActivities
-
-Same as campaignactivity entity [knowledgearticle_CampaignActivities](campaignactivity.md#BKMK_knowledgearticle_CampaignActivities) Many-To-One relationship.
-
-|Property|Value|
-|--------|-----|
-|ReferencingEntity|campaignactivity|
-|ReferencingAttribute|regardingobjectid|
-|IsHierarchical|False|
-|IsCustomizable|True|
-|ReferencedEntityNavigationPropertyName|knowledgearticle_CampaignActivities|
-|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
-|CascadeConfiguration|Assign: Cascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: Cascade<br />Share: Cascade<br />Unshare: Cascade|
-
-
 ### <a name="BKMK_knowledgearticle_CampaignResponses"></a> knowledgearticle_CampaignResponses
+
+**Added by**: Marketing Solution
 
 Same as campaignresponse entity [knowledgearticle_CampaignResponses](campaignresponse.md#BKMK_knowledgearticle_CampaignResponses) Many-To-One relationship.
 
@@ -1593,6 +1589,8 @@ Same as campaignresponse entity [knowledgearticle_CampaignResponses](campaignres
 
 ### <a name="BKMK_knowledgearticle_IncidentResolutions"></a> knowledgearticle_IncidentResolutions
 
+**Added by**: Service Solution
+
 Same as incidentresolution entity [knowledgearticle_IncidentResolutions](incidentresolution.md#BKMK_knowledgearticle_IncidentResolutions) Many-To-One relationship.
 
 |Property|Value|
@@ -1607,6 +1605,8 @@ Same as incidentresolution entity [knowledgearticle_IncidentResolutions](inciden
 
 
 ### <a name="BKMK_KnowledgeArticle_ServiceAppointments"></a> KnowledgeArticle_ServiceAppointments
+
+**Added by**: Service Solution
 
 Same as serviceappointment entity [KnowledgeArticle_ServiceAppointments](serviceappointment.md#BKMK_KnowledgeArticle_ServiceAppointments) Many-To-One relationship.
 
@@ -1623,6 +1623,8 @@ Same as serviceappointment entity [KnowledgeArticle_ServiceAppointments](service
 
 ### <a name="BKMK_incident_knowledgearticles"></a> incident_knowledgearticles
 
+**Added by**: Service Solution
+
 Same as knowledgearticleincident entity [incident_knowledgearticles](knowledgearticleincident.md#BKMK_incident_knowledgearticles) Many-To-One relationship.
 
 |Property|Value|
@@ -1637,6 +1639,8 @@ Same as knowledgearticleincident entity [incident_knowledgearticles](knowledgear
 
 
 ### <a name="BKMK_knowledgearticle_OpportunityCloses"></a> knowledgearticle_OpportunityCloses
+
+**Added by**: Sales Solution
 
 Same as opportunityclose entity [knowledgearticle_OpportunityCloses](opportunityclose.md#BKMK_knowledgearticle_OpportunityCloses) Many-To-One relationship.
 
@@ -1653,6 +1657,8 @@ Same as opportunityclose entity [knowledgearticle_OpportunityCloses](opportunity
 
 ### <a name="BKMK_knowledgearticle_OrderCloses"></a> knowledgearticle_OrderCloses
 
+**Added by**: Sales Solution
+
 Same as orderclose entity [knowledgearticle_OrderCloses](orderclose.md#BKMK_knowledgearticle_OrderCloses) Many-To-One relationship.
 
 |Property|Value|
@@ -1668,6 +1674,8 @@ Same as orderclose entity [knowledgearticle_OrderCloses](orderclose.md#BKMK_know
 
 ### <a name="BKMK_knowledgearticle_QuoteCloses"></a> knowledgearticle_QuoteCloses
 
+**Added by**: Sales Solution
+
 Same as quoteclose entity [knowledgearticle_QuoteCloses](quoteclose.md#BKMK_knowledgearticle_QuoteCloses) Many-To-One relationship.
 
 |Property|Value|
@@ -1681,7 +1689,43 @@ Same as quoteclose entity [knowledgearticle_QuoteCloses](quoteclose.md#BKMK_know
 |CascadeConfiguration|Assign: Cascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: Cascade<br />Share: Cascade<br />Unshare: Cascade|
 
 
+### <a name="BKMK_knowledgearticle_msfp_surveyinvites"></a> knowledgearticle_msfp_surveyinvites
+
+**Added by**: Active Solution Solution
+
+Same as msfp_surveyinvite entity [knowledgearticle_msfp_surveyinvites](msfp_surveyinvite.md#BKMK_knowledgearticle_msfp_surveyinvites) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msfp_surveyinvite|
+|ReferencingAttribute|regardingobjectid|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|knowledgearticle_msfp_surveyinvites|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: Cascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: Cascade<br />Share: Cascade<br />Unshare: Cascade|
+
+
+### <a name="BKMK_knowledgearticle_msfp_surveyresponses"></a> knowledgearticle_msfp_surveyresponses
+
+**Added by**: Active Solution Solution
+
+Same as msfp_surveyresponse entity [knowledgearticle_msfp_surveyresponses](msfp_surveyresponse.md#BKMK_knowledgearticle_msfp_surveyresponses) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msfp_surveyresponse|
+|ReferencingAttribute|regardingobjectid|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|knowledgearticle_msfp_surveyresponses|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: Cascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: Cascade<br />Share: Cascade<br />Unshare: Cascade|
+
+
 ### <a name="BKMK_knowledgearticle_msdyn_bookingalerts"></a> knowledgearticle_msdyn_bookingalerts
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_bookingalert entity [knowledgearticle_msdyn_bookingalerts](msdyn_bookingalert.md#BKMK_knowledgearticle_msdyn_bookingalerts) Many-To-One relationship.
 
@@ -1697,6 +1741,8 @@ Same as msdyn_bookingalert entity [knowledgearticle_msdyn_bookingalerts](msdyn_b
 
 
 ### <a name="BKMK_knowledgearticle_msdyn_approvals"></a> knowledgearticle_msdyn_approvals
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_approval entity [knowledgearticle_msdyn_approvals](msdyn_approval.md#BKMK_knowledgearticle_msdyn_approvals) Many-To-One relationship.
 
@@ -2320,6 +2366,6 @@ IntersectEntityName: knowledgearticlescategories<br />
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.knowledgearticle?text=knowledgearticle EntityType" />

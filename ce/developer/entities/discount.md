@@ -1,35 +1,37 @@
 ---
-title: "Discount Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "Discount Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the Discount entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # Discount Entity Reference
 
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
+
 Price reduction made from the list price of a product or service based on the quantity purchased.
 
-**Added by**: Sales Solution<br />
+**Added by**: Sales Solution
+
 
 ## Messages
 
 |Message|Web API Operation|SDK Assembly|
 |-|-|-|
-|Create|POST [*org URI*]/api/data/v9.0/discounts<br />See [Create](../webapi/create-entity-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
-|Delete|DELETE [*org URI*]/api/data/v9.0/discounts(*discountid*)<br />See [Delete](../webapi/update-delete-entities-using-web-api.md#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
-|Retrieve|GET [*org URI*]/api/data/v9.0/discounts(*discountid*)<br />See [Retrieve](../webapi/retrieve-entity-using-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/discounts<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
-|Update|PATCH [*org URI*]/api/data/v9.0/discounts(*discountid*)<br />See [Update](../webapi/update-delete-entities-using-web-api.md#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
+|Create|POST [*org URI*]/api/data/v9.0/discounts<br />See [Create](/powerapps/developer/common-data-service/webapi/create-entity-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
+|Delete|DELETE [*org URI*]/api/data/v9.0/discounts(*discountid*)<br />See [Delete](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
+|Retrieve|GET [*org URI*]/api/data/v9.0/discounts(*discountid*)<br />See [Retrieve](/powerapps/developer/common-data-service/webapi/retrieve-entity-using-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/discounts<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|Update|PATCH [*org URI*]/api/data/v9.0/discounts(*discountid*)<br />See [Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
 
 ## Entity Properties
 
@@ -106,7 +108,6 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |DisplayName|Discount Type|
 |IsValidForForm|False|
 |IsValidForRead|True|
-|IsValidForUpdate|False|
 |LogicalName|discounttypeid|
 |RequiredLevel|SystemRequired|
 |Targets|discounttype|
@@ -224,9 +225,10 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 
 #### StatusCode Options
 
-| Value | Label | State |
-|-------|-------|-------|
-|       |       |       |
+|Value|Label|State|
+|-----|-----|-----|
+
+
 
 ### <a name="BKMK_TimeZoneRuleVersionNumber"></a> TimeZoneRuleVersionNumber
 
@@ -260,7 +262,9 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Type|Integer|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [Amount_Base](#BKMK_Amount_Base)
@@ -428,6 +432,8 @@ These attributes return false for both **IsValidForCreate** or **IsValidForUpdat
 
 
 ### <a name="BKMK_ExchangeRate"></a> ExchangeRate
+
+**Added by**: Active Solution Solution
 
 |Property|Value|
 |--------|-----|
@@ -647,6 +653,8 @@ Listed by **SchemaName**.
 
 ### <a name="BKMK_Discount_SyncErrors"></a> Discount_SyncErrors
 
+**Added by**: System Solution Solution
+
 Same as syncerror entity [Discount_SyncErrors](syncerror.md#BKMK_Discount_SyncErrors) Many-To-One relationship.
 
 |Property|Value|
@@ -661,6 +669,8 @@ Same as syncerror entity [Discount_SyncErrors](syncerror.md#BKMK_Discount_SyncEr
 
 
 ### <a name="BKMK_Discount_AsyncOperations"></a> Discount_AsyncOperations
+
+**Added by**: System Solution Solution
 
 Same as asyncoperation entity [Discount_AsyncOperations](asyncoperation.md#BKMK_Discount_AsyncOperations) Many-To-One relationship.
 
@@ -677,6 +687,8 @@ Same as asyncoperation entity [Discount_AsyncOperations](asyncoperation.md#BKMK_
 
 ### <a name="BKMK_discount_MailboxTrackingFolders"></a> discount_MailboxTrackingFolders
 
+**Added by**: System Solution Solution
+
 Same as mailboxtrackingfolder entity [discount_MailboxTrackingFolders](mailboxtrackingfolder.md#BKMK_discount_MailboxTrackingFolders) Many-To-One relationship.
 
 |Property|Value|
@@ -687,10 +699,12 @@ Same as mailboxtrackingfolder entity [discount_MailboxTrackingFolders](mailboxtr
 |IsCustomizable|True|
 |ReferencedEntityNavigationPropertyName|discount_MailboxTrackingFolders|
 |AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
-|CascadeConfiguration|Assign: Cascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: Cascade<br />Share: Cascade<br />Unshare: Cascade|
+|CascadeConfiguration|Assign: NoCascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
 ### <a name="BKMK_userentityinstancedata_discount"></a> userentityinstancedata_discount
+
+**Added by**: System Solution Solution
 
 Same as userentityinstancedata entity [userentityinstancedata_discount](userentityinstancedata.md#BKMK_userentityinstancedata_discount) Many-To-One relationship.
 
@@ -707,6 +721,8 @@ Same as userentityinstancedata entity [userentityinstancedata_discount](userenti
 
 ### <a name="BKMK_Discount_ProcessSessions"></a> Discount_ProcessSessions
 
+**Added by**: System Solution Solution
+
 Same as processsession entity [Discount_ProcessSessions](processsession.md#BKMK_Discount_ProcessSessions) Many-To-One relationship.
 
 |Property|Value|
@@ -722,6 +738,8 @@ Same as processsession entity [Discount_ProcessSessions](processsession.md#BKMK_
 
 ### <a name="BKMK_Discount_BulkDeleteFailures"></a> Discount_BulkDeleteFailures
 
+**Added by**: System Solution Solution
+
 Same as bulkdeletefailure entity [Discount_BulkDeleteFailures](bulkdeletefailure.md#BKMK_Discount_BulkDeleteFailures) Many-To-One relationship.
 
 |Property|Value|
@@ -736,6 +754,8 @@ Same as bulkdeletefailure entity [Discount_BulkDeleteFailures](bulkdeletefailure
 
 
 ### <a name="BKMK_discount_PrincipalObjectAttributeAccesses"></a> discount_PrincipalObjectAttributeAccesses
+
+**Added by**: System Solution Solution
 
 Same as principalobjectattributeaccess entity [discount_PrincipalObjectAttributeAccesses](principalobjectattributeaccess.md#BKMK_discount_PrincipalObjectAttributeAccesses) Many-To-One relationship.
 
@@ -765,21 +785,31 @@ Each Many-To-One relationship is defined by a corresponding One-To-Many relation
 
 ### <a name="BKMK_lk_discountbase_createdby"></a> lk_discountbase_createdby
 
+**Added by**: System Solution Solution
+
 See systemuser Entity [lk_discountbase_createdby](systemuser.md#BKMK_lk_discountbase_createdby) One-To-Many relationship.
 
 ### <a name="BKMK_lk_discount_createdonbehalfby"></a> lk_discount_createdonbehalfby
+
+**Added by**: System Solution Solution
 
 See systemuser Entity [lk_discount_createdonbehalfby](systemuser.md#BKMK_lk_discount_createdonbehalfby) One-To-Many relationship.
 
 ### <a name="BKMK_lk_discountbase_modifiedby"></a> lk_discountbase_modifiedby
 
+**Added by**: System Solution Solution
+
 See systemuser Entity [lk_discountbase_modifiedby](systemuser.md#BKMK_lk_discountbase_modifiedby) One-To-Many relationship.
 
 ### <a name="BKMK_lk_discount_modifiedonbehalfby"></a> lk_discount_modifiedonbehalfby
 
+**Added by**: System Solution Solution
+
 See systemuser Entity [lk_discount_modifiedonbehalfby](systemuser.md#BKMK_lk_discount_modifiedonbehalfby) One-To-Many relationship.
 
 ### <a name="BKMK_transactioncurrency_discount"></a> transactioncurrency_discount
+
+**Added by**: System Solution Solution
 
 See transactioncurrency Entity [transactioncurrency_discount](transactioncurrency.md#BKMK_transactioncurrency_discount) One-To-Many relationship.
 
@@ -790,6 +820,6 @@ See discounttype Entity [discount_type_discounts](discounttype.md#BKMK_discount_
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.discount?text=discount EntityType" />

@@ -1,21 +1,22 @@
 ---
-title: "Team Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "Team Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the Team entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # Team Entity Reference
+
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
 
 Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.
 
@@ -26,15 +27,15 @@ Collection of system users that routinely collaborate. Teams can be used to simp
 |-|-|-|
 |AddMembersTeam|<xref href="Microsoft.Dynamics.CRM.AddMembersTeam?text=AddMembersTeam Action" />|<xref:Microsoft.Crm.Sdk.Messages.AddMembersTeamRequest>|
 |ConvertOwnerTeamToAccessTeam|<xref href="Microsoft.Dynamics.CRM.ConvertOwnerTeamToAccessTeam?text=ConvertOwnerTeamToAccessTeam Action" />|<xref:Microsoft.Crm.Sdk.Messages.ConvertOwnerTeamToAccessTeamRequest>|
-|Create|POST [*org URI*]/api/data/v9.0/teams<br />See [Create](../webapi/create-entity-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
-|Delete|DELETE [*org URI*]/api/data/v9.0/teams(*teamid*)<br />See [Delete](../webapi/update-delete-entities-using-web-api.md#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
+|Create|POST [*org URI*]/api/data/v9.0/teams<br />See [Create](/powerapps/developer/common-data-service/webapi/create-entity-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
+|Delete|DELETE [*org URI*]/api/data/v9.0/teams(*teamid*)<br />See [Delete](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
 |RemoveMembersTeam|<xref href="Microsoft.Dynamics.CRM.RemoveMembersTeam?text=RemoveMembersTeam Action" />|<xref:Microsoft.Crm.Sdk.Messages.RemoveMembersTeamRequest>|
-|Retrieve|GET [*org URI*]/api/data/v9.0/teams(*teamid*)<br />See [Retrieve](../webapi/retrieve-entity-using-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/teams<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
-|SetParentBusinessUnit|[Associate and disassociate entities](../webapi/associate-disassociate-entities-using-web-api.md)|<xref:Microsoft.Crm.Sdk.Messages.SetParentBusinessUnitRequest>|
+|Retrieve|GET [*org URI*]/api/data/v9.0/teams(*teamid*)<br />See [Retrieve](/powerapps/developer/common-data-service/webapi/retrieve-entity-using-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/teams<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|SetParentBusinessUnit|[Associate and disassociate entities](/powerapps/developer/common-data-service/webapi/associate-disassociate-entities-using-web-api)|<xref:Microsoft.Crm.Sdk.Messages.SetParentBusinessUnitRequest>|
 |SetParentSystemUser|<xref href="Microsoft.Dynamics.CRM.SetParentSystemUser?text=SetParentSystemUser Action" />|<xref:Microsoft.Crm.Sdk.Messages.SetParentSystemUserRequest>|
-|SetParentTeam|[Associate and disassociate entities](../webapi/associate-disassociate-entities-using-web-api.md)|<xref:Microsoft.Crm.Sdk.Messages.SetParentTeamRequest>|
-|Update|PATCH [*org URI*]/api/data/v9.0/teams(*teamid*)<br />See [Update](../webapi/update-delete-entities-using-web-api.md#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
+|SetParentTeam|[Associate and disassociate entities](/powerapps/developer/common-data-service/webapi/associate-disassociate-entities-using-web-api)|<xref:Microsoft.Crm.Sdk.Messages.SetParentTeamRequest>|
+|Update|PATCH [*org URI*]/api/data/v9.0/teams(*teamid*)<br />See [Update](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)|<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|
 
 ## Entity Properties
 
@@ -92,6 +93,7 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Targets|systemuser|
 |Type|Lookup|
 
+
 ### <a name="BKMK_AzureActiveDirectoryObjectId"></a> AzureActiveDirectoryObjectId
 
 |Property|Value|
@@ -100,9 +102,11 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |DisplayName|Azure AD Object Id for a group|
 |IsValidForForm|True|
 |IsValidForRead|True|
+|IsValidForUpdate|False|
 |LogicalName|azureactivedirectoryobjectid|
 |RequiredLevel|None|
 |Type|Uniqueidentifier|
+
 
 ### <a name="BKMK_BusinessUnitId"></a> BusinessUnitId
 
@@ -260,7 +264,7 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Property|Value|
 |--------|-----|
 |Description|Shows the ID of the stage.|
-|DisplayName|Process Stage|
+|DisplayName|(Deprecated) Process Stage|
 |IsValidForForm|False|
 |IsValidForRead|True|
 |LogicalName|stageid|
@@ -320,6 +324,7 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |3|AAD Office Group|
 
 
+
 ### <a name="BKMK_TransactionCurrencyId"></a> TransactionCurrencyId
 
 |Property|Value|
@@ -339,7 +344,7 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Property|Value|
 |--------|-----|
 |Description|For internal use only.|
-|DisplayName|Traversed Path|
+|DisplayName|(Deprecated) Traversed Path|
 |FormatName|Text|
 |IsLocalizable|False|
 |IsValidForForm|False|
@@ -366,7 +371,9 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Type|String|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [AdministratorIdName](#BKMK_AdministratorIdName)
@@ -831,6 +838,13 @@ Listed by **SchemaName**.
 - [team_service_appointments](#BKMK_team_service_appointments)
 - [team_resource_specs](#BKMK_team_resource_specs)
 - [team_resource_groups](#BKMK_team_resource_groups)
+- [team_entitlemententityallocationtypemapping](#BKMK_team_entitlemententityallocationtypemapping)
+- [team_msdyn_callablecontext](#BKMK_team_msdyn_callablecontext)
+- [team_msdyn_playbookactivity](#BKMK_team_msdyn_playbookactivity)
+- [team_msdyn_playbookactivityattribute](#BKMK_team_msdyn_playbookactivityattribute)
+- [team_msdyn_playbookcategory](#BKMK_team_msdyn_playbookcategory)
+- [team_msdyn_playbookinstance](#BKMK_team_msdyn_playbookinstance)
+- [team_msdyn_playbooktemplate](#BKMK_team_msdyn_playbooktemplate)
 - [team_customer_opportunity_roles](#BKMK_team_customer_opportunity_roles)
 - [team_invoices](#BKMK_team_invoices)
 - [team_invoicedetail](#BKMK_team_invoicedetail)
@@ -843,19 +857,39 @@ Listed by **SchemaName**.
 - [team_quotedetail](#BKMK_team_quotedetail)
 - [team_orders](#BKMK_team_orders)
 - [team_salesorderdetail](#BKMK_team_salesorderdetail)
+- [team_adminsettingsentity](#BKMK_team_adminsettingsentity)
+- [team_msdyn_forecastdefinition](#BKMK_team_msdyn_forecastdefinition)
+- [team_msdyn_forecastinstance](#BKMK_team_msdyn_forecastinstance)
+- [team_msdyn_forecastrecurrence](#BKMK_team_msdyn_forecastrecurrence)
+- [team_msdyn_relationshipinsightsunifiedconfig](#BKMK_team_msdyn_relationshipinsightsunifiedconfig)
+- [team_msdyn_siconfig](#BKMK_team_msdyn_siconfig)
+- [team_msdyn_untrackedappointment](#BKMK_team_msdyn_untrackedappointment)
+- [team_msdyn_notesanalysisconfig](#BKMK_team_msdyn_notesanalysisconfig)
+- [team_msdyn_icebreakersconfig](#BKMK_team_msdyn_icebreakersconfig)
 - [team_msdyn_postalbum](#BKMK_team_msdyn_postalbum)
 - [team_msdyn_wallsavedqueryusersettings](#BKMK_team_msdyn_wallsavedqueryusersettings)
+- [team_msfp_emailtemplate](#BKMK_team_msfp_emailtemplate)
+- [team_msfp_question](#BKMK_team_msfp_question)
+- [team_msfp_questionresponse](#BKMK_team_msfp_questionresponse)
+- [team_msfp_survey](#BKMK_team_msfp_survey)
+- [msfp_surveyinvite_team_owningteam](#BKMK_msfp_surveyinvite_team_owningteam)
+- [msfp_surveyresponse_team_owningteam](#BKMK_msfp_surveyresponse_team_owningteam)
+- [team_msfp_unsubscribedrecipient](#BKMK_team_msfp_unsubscribedrecipient)
 - [team_msdyn_actual](#BKMK_team_msdyn_actual)
+- [team_msdyn_bookableresourceassociation](#BKMK_team_msdyn_bookableresourceassociation)
 - [msdyn_bookingalert_team_owningteam](#BKMK_msdyn_bookingalert_team_owningteam)
 - [team_msdyn_bookingalertstatus](#BKMK_team_msdyn_bookingalertstatus)
 - [team_msdyn_bookingchange](#BKMK_team_msdyn_bookingchange)
 - [team_msdyn_bookingrule](#BKMK_team_msdyn_bookingrule)
 - [team_msdyn_bookingsetupmetadata](#BKMK_team_msdyn_bookingsetupmetadata)
+- [team_msdyn_businessclosure](#BKMK_team_msdyn_businessclosure)
 - [team_msdyn_clientextension](#BKMK_team_msdyn_clientextension)
 - [team_msdyn_configuration](#BKMK_team_msdyn_configuration)
 - [team_msdyn_priority](#BKMK_team_msdyn_priority)
 - [team_msdyn_requirementcharacteristic](#BKMK_team_msdyn_requirementcharacteristic)
+- [team_msdyn_requirementgroup](#BKMK_team_msdyn_requirementgroup)
 - [team_msdyn_requirementorganizationunit](#BKMK_team_msdyn_requirementorganizationunit)
+- [team_msdyn_requirementrelationship](#BKMK_team_msdyn_requirementrelationship)
 - [team_msdyn_requirementresourcecategory](#BKMK_team_msdyn_requirementresourcecategory)
 - [team_msdyn_requirementresourcepreference](#BKMK_team_msdyn_requirementresourcepreference)
 - [team_msdyn_requirementstatus](#BKMK_team_msdyn_requirementstatus)
@@ -875,6 +909,7 @@ Listed by **SchemaName**.
 - [team_msdyn_contractlinescheduleofvalue](#BKMK_team_msdyn_contractlinescheduleofvalue)
 - [team_msdyn_dataexport](#BKMK_team_msdyn_dataexport)
 - [team_msdyn_delegation](#BKMK_team_msdyn_delegation)
+- [team_msdyn_dimension](#BKMK_team_msdyn_dimension)
 - [team_msdyn_estimate](#BKMK_team_msdyn_estimate)
 - [team_msdyn_estimateline](#BKMK_team_msdyn_estimateline)
 - [team_msdyn_expense](#BKMK_team_msdyn_expense)
@@ -922,6 +957,12 @@ Listed by **SchemaName**.
 - [team_msdyn_transactionconnection](#BKMK_team_msdyn_transactionconnection)
 - [team_msdyn_userworkhistory](#BKMK_team_msdyn_userworkhistory)
 - [msdyn_team_msdyn_project_projectteamid](#BKMK_msdyn_team_msdyn_project_projectteamid)
+- [team_msdyn_analysiscomponent](#BKMK_team_msdyn_analysiscomponent)
+- [team_msdyn_analysisjob](#BKMK_team_msdyn_analysisjob)
+- [team_msdyn_analysisresult](#BKMK_team_msdyn_analysisresult)
+- [team_msdyn_analysisresultdetail](#BKMK_team_msdyn_analysisresultdetail)
+- [team_msdyn_solutionhealthrule](#BKMK_team_msdyn_solutionhealthrule)
+- [team_msdyn_solutionhealthruleargument](#BKMK_team_msdyn_solutionhealthruleargument)
 - [team_msdyn_agreement](#BKMK_team_msdyn_agreement)
 - [team_msdyn_agreementbookingdate](#BKMK_team_msdyn_agreementbookingdate)
 - [team_msdyn_agreementbookingincident](#BKMK_team_msdyn_agreementbookingincident)
@@ -936,12 +977,17 @@ Listed by **SchemaName**.
 - [team_msdyn_bookingjournal](#BKMK_team_msdyn_bookingjournal)
 - [team_msdyn_bookingtimestamp](#BKMK_team_msdyn_bookingtimestamp)
 - [team_msdyn_customerasset](#BKMK_team_msdyn_customerasset)
+- [team_msdyn_customerassetcategory](#BKMK_team_msdyn_customerassetcategory)
+- [team_msdyn_entitlementapplication](#BKMK_team_msdyn_entitlementapplication)
 - [team_msdyn_fieldservicesetting](#BKMK_team_msdyn_fieldservicesetting)
+- [team_msdyn_fieldserviceslaconfiguration](#BKMK_team_msdyn_fieldserviceslaconfiguration)
 - [team_msdyn_incidenttype](#BKMK_team_msdyn_incidenttype)
 - [team_msdyn_incidenttypecharacteristic](#BKMK_team_msdyn_incidenttypecharacteristic)
 - [team_msdyn_incidenttypeproduct](#BKMK_team_msdyn_incidenttypeproduct)
 - [team_msdyn_incidenttypeservice](#BKMK_team_msdyn_incidenttypeservice)
 - [team_msdyn_incidenttypeservicetask](#BKMK_team_msdyn_incidenttypeservicetask)
+- [team_msdyn_incidenttypessetup](#BKMK_team_msdyn_incidenttypessetup)
+- [team_msdyn_incidenttype_requirementgroup](#BKMK_team_msdyn_incidenttype_requirementgroup)
 - [team_msdyn_inventoryadjustment](#BKMK_team_msdyn_inventoryadjustment)
 - [team_msdyn_inventoryadjustmentproduct](#BKMK_team_msdyn_inventoryadjustmentproduct)
 - [team_msdyn_inventoryjournal](#BKMK_team_msdyn_inventoryjournal)
@@ -996,7 +1042,16 @@ Listed by **SchemaName**.
 - [team_msdyn_iotdevice](#BKMK_team_msdyn_iotdevice)
 - [team_msdyn_iotdevicecategory](#BKMK_team_msdyn_iotdevicecategory)
 - [team_msdyn_iotdevicecommand](#BKMK_team_msdyn_iotdevicecommand)
+- [team_msdyn_iotdevicecommanddefinition](#BKMK_team_msdyn_iotdevicecommanddefinition)
+- [team_msdyn_iotdevicedatahistory](#BKMK_team_msdyn_iotdevicedatahistory)
+- [team_msdyn_iotdeviceproperty](#BKMK_team_msdyn_iotdeviceproperty)
 - [team_msdyn_iotdeviceregistrationhistory](#BKMK_team_msdyn_iotdeviceregistrationhistory)
+- [team_msdyn_iotpropertydefinition](#BKMK_team_msdyn_iotpropertydefinition)
+- [team_msdyn_iotsettings](#BKMK_team_msdyn_iotsettings)
+- [team_msdyn_entityconfiguration](#BKMK_team_msdyn_entityconfiguration)
+- [team_msdyn_geofence](#BKMK_team_msdyn_geofence)
+- [team_msdyn_geofenceevent](#BKMK_team_msdyn_geofenceevent)
+- [team_msdyn_geofencingsettings](#BKMK_team_msdyn_geofencingsettings)
 - [team_principalobjectattributeaccess_principalid](#BKMK_team_principalobjectattributeaccess_principalid)
 - [team_exchangesyncidmapping](#BKMK_team_exchangesyncidmapping)
 - [team_interactionforemail](#BKMK_team_interactionforemail)
@@ -1028,6 +1083,7 @@ Listed by **SchemaName**.
 - [team_socialactivity](#BKMK_team_socialactivity)
 - [Team_ProcessSessions](#BKMK_Team_ProcessSessions)
 - [Team_DuplicateMatchingRecord](#BKMK_Team_DuplicateMatchingRecord)
+- [team_mailboxtrackingcategory](#BKMK_team_mailboxtrackingcategory)
 - [team_userentityuisettings](#BKMK_team_userentityuisettings)
 - [team_contacts](#BKMK_team_contacts)
 - [Team_AsyncOperations](#BKMK_Team_AsyncOperations)
@@ -1063,6 +1119,8 @@ Listed by **SchemaName**.
 
 ### <a name="BKMK_lead_owning_team"></a> lead_owning_team
 
+**Added by**: Lead Management Solution
+
 Same as lead entity [lead_owning_team](lead.md#BKMK_lead_owning_team) Many-To-One relationship.
 
 |Property|Value|
@@ -1077,6 +1135,8 @@ Same as lead entity [lead_owning_team](lead.md#BKMK_lead_owning_team) Many-To-On
 
 
 ### <a name="BKMK_team_DynamicPropertyInstance"></a> team_DynamicPropertyInstance
+
+**Added by**: Product Management Solution
 
 Same as dynamicpropertyinstance entity [team_DynamicPropertyInstance](dynamicpropertyinstance.md#BKMK_team_DynamicPropertyInstance) Many-To-One relationship.
 
@@ -1093,6 +1153,8 @@ Same as dynamicpropertyinstance entity [team_DynamicPropertyInstance](dynamicpro
 
 ### <a name="BKMK_team_bookableresource"></a> team_bookableresource
 
+**Added by**: Scheduling Solution
+
 Same as bookableresource entity [team_bookableresource](bookableresource.md#BKMK_team_bookableresource) Many-To-One relationship.
 
 |Property|Value|
@@ -1107,6 +1169,8 @@ Same as bookableresource entity [team_bookableresource](bookableresource.md#BKMK
 
 
 ### <a name="BKMK_team_bookableresourcebooking"></a> team_bookableresourcebooking
+
+**Added by**: Scheduling Solution
 
 Same as bookableresourcebooking entity [team_bookableresourcebooking](bookableresourcebooking.md#BKMK_team_bookableresourcebooking) Many-To-One relationship.
 
@@ -1123,6 +1187,8 @@ Same as bookableresourcebooking entity [team_bookableresourcebooking](bookablere
 
 ### <a name="BKMK_team_bookableresourcebookingexchangesyncidmapping"></a> team_bookableresourcebookingexchangesyncidmapping
 
+**Added by**: Scheduling Solution
+
 Same as bookableresourcebookingexchangesyncidmapping entity [team_bookableresourcebookingexchangesyncidmapping](bookableresourcebookingexchangesyncidmapping.md#BKMK_team_bookableresourcebookingexchangesyncidmapping) Many-To-One relationship.
 
 |Property|Value|
@@ -1137,6 +1203,8 @@ Same as bookableresourcebookingexchangesyncidmapping entity [team_bookableresour
 
 
 ### <a name="BKMK_team_bookableresourcebookingheader"></a> team_bookableresourcebookingheader
+
+**Added by**: Scheduling Solution
 
 Same as bookableresourcebookingheader entity [team_bookableresourcebookingheader](bookableresourcebookingheader.md#BKMK_team_bookableresourcebookingheader) Many-To-One relationship.
 
@@ -1153,6 +1221,8 @@ Same as bookableresourcebookingheader entity [team_bookableresourcebookingheader
 
 ### <a name="BKMK_team_bookableresourcecategory"></a> team_bookableresourcecategory
 
+**Added by**: Scheduling Solution
+
 Same as bookableresourcecategory entity [team_bookableresourcecategory](bookableresourcecategory.md#BKMK_team_bookableresourcecategory) Many-To-One relationship.
 
 |Property|Value|
@@ -1167,6 +1237,8 @@ Same as bookableresourcecategory entity [team_bookableresourcecategory](bookable
 
 
 ### <a name="BKMK_team_bookableresourcecategoryassn"></a> team_bookableresourcecategoryassn
+
+**Added by**: Scheduling Solution
 
 Same as bookableresourcecategoryassn entity [team_bookableresourcecategoryassn](bookableresourcecategoryassn.md#BKMK_team_bookableresourcecategoryassn) Many-To-One relationship.
 
@@ -1183,6 +1255,8 @@ Same as bookableresourcecategoryassn entity [team_bookableresourcecategoryassn](
 
 ### <a name="BKMK_team_bookableresourcecharacteristic"></a> team_bookableresourcecharacteristic
 
+**Added by**: Scheduling Solution
+
 Same as bookableresourcecharacteristic entity [team_bookableresourcecharacteristic](bookableresourcecharacteristic.md#BKMK_team_bookableresourcecharacteristic) Many-To-One relationship.
 
 |Property|Value|
@@ -1197,6 +1271,8 @@ Same as bookableresourcecharacteristic entity [team_bookableresourcecharacterist
 
 
 ### <a name="BKMK_team_bookableresourcegroup"></a> team_bookableresourcegroup
+
+**Added by**: Scheduling Solution
 
 Same as bookableresourcegroup entity [team_bookableresourcegroup](bookableresourcegroup.md#BKMK_team_bookableresourcegroup) Many-To-One relationship.
 
@@ -1213,6 +1289,8 @@ Same as bookableresourcegroup entity [team_bookableresourcegroup](bookableresour
 
 ### <a name="BKMK_team_bookingstatus"></a> team_bookingstatus
 
+**Added by**: Scheduling Solution
+
 Same as bookingstatus entity [team_bookingstatus](bookingstatus.md#BKMK_team_bookingstatus) Many-To-One relationship.
 
 |Property|Value|
@@ -1227,6 +1305,8 @@ Same as bookingstatus entity [team_bookingstatus](bookingstatus.md#BKMK_team_boo
 
 
 ### <a name="BKMK_team_characteristic"></a> team_characteristic
+
+**Added by**: Scheduling Solution
 
 Same as characteristic entity [team_characteristic](characteristic.md#BKMK_team_characteristic) Many-To-One relationship.
 
@@ -1243,6 +1323,8 @@ Same as characteristic entity [team_characteristic](characteristic.md#BKMK_team_
 
 ### <a name="BKMK_team_ratingmodel"></a> team_ratingmodel
 
+**Added by**: Scheduling Solution
+
 Same as ratingmodel entity [team_ratingmodel](ratingmodel.md#BKMK_team_ratingmodel) Many-To-One relationship.
 
 |Property|Value|
@@ -1257,6 +1339,8 @@ Same as ratingmodel entity [team_ratingmodel](ratingmodel.md#BKMK_team_ratingmod
 
 
 ### <a name="BKMK_team_ratingvalue"></a> team_ratingvalue
+
+**Added by**: Scheduling Solution
 
 Same as ratingvalue entity [team_ratingvalue](ratingvalue.md#BKMK_team_ratingvalue) Many-To-One relationship.
 
@@ -1273,6 +1357,8 @@ Same as ratingvalue entity [team_ratingvalue](ratingvalue.md#BKMK_team_ratingval
 
 ### <a name="BKMK_team_BulkOperation"></a> team_BulkOperation
 
+**Added by**: Marketing Solution
+
 Same as bulkoperation entity [team_BulkOperation](bulkoperation.md#BKMK_team_BulkOperation) Many-To-One relationship.
 
 |Property|Value|
@@ -1287,6 +1373,8 @@ Same as bulkoperation entity [team_BulkOperation](bulkoperation.md#BKMK_team_Bul
 
 
 ### <a name="BKMK_team_bulkoperationlog"></a> team_bulkoperationlog
+
+**Added by**: Marketing Solution
 
 Same as bulkoperationlog entity [team_bulkoperationlog](bulkoperationlog.md#BKMK_team_bulkoperationlog) Many-To-One relationship.
 
@@ -1303,6 +1391,8 @@ Same as bulkoperationlog entity [team_bulkoperationlog](bulkoperationlog.md#BKMK
 
 ### <a name="BKMK_team_Campaigns"></a> team_Campaigns
 
+**Added by**: Marketing Solution
+
 Same as campaign entity [team_Campaigns](campaign.md#BKMK_team_Campaigns) Many-To-One relationship.
 
 |Property|Value|
@@ -1317,6 +1407,8 @@ Same as campaign entity [team_Campaigns](campaign.md#BKMK_team_Campaigns) Many-T
 
 
 ### <a name="BKMK_team_campaignactivity"></a> team_campaignactivity
+
+**Added by**: Marketing Solution
 
 Same as campaignactivity entity [team_campaignactivity](campaignactivity.md#BKMK_team_campaignactivity) Many-To-One relationship.
 
@@ -1333,6 +1425,8 @@ Same as campaignactivity entity [team_campaignactivity](campaignactivity.md#BKMK
 
 ### <a name="BKMK_team_campaignresponse"></a> team_campaignresponse
 
+**Added by**: Marketing Solution
+
 Same as campaignresponse entity [team_campaignresponse](campaignresponse.md#BKMK_team_campaignresponse) Many-To-One relationship.
 
 |Property|Value|
@@ -1347,6 +1441,8 @@ Same as campaignresponse entity [team_campaignresponse](campaignresponse.md#BKMK
 
 
 ### <a name="BKMK_team_list"></a> team_list
+
+**Added by**: Marketing Solution
 
 Same as list entity [team_list](list.md#BKMK_team_list) Many-To-One relationship.
 
@@ -1363,6 +1459,8 @@ Same as list entity [team_list](list.md#BKMK_team_list) Many-To-One relationship
 
 ### <a name="BKMK_team_service_contracts"></a> team_service_contracts
 
+**Added by**: Service Solution
+
 Same as contract entity [team_service_contracts](contract.md#BKMK_team_service_contracts) Many-To-One relationship.
 
 |Property|Value|
@@ -1377,6 +1475,8 @@ Same as contract entity [team_service_contracts](contract.md#BKMK_team_service_c
 
 
 ### <a name="BKMK_team_contractdetail"></a> team_contractdetail
+
+**Added by**: Service Solution
 
 Same as contractdetail entity [team_contractdetail](contractdetail.md#BKMK_team_contractdetail) Many-To-One relationship.
 
@@ -1393,6 +1493,8 @@ Same as contractdetail entity [team_contractdetail](contractdetail.md#BKMK_team_
 
 ### <a name="BKMK_team_entitlement"></a> team_entitlement
 
+**Added by**: Service Solution
+
 Same as entitlement entity [team_entitlement](entitlement.md#BKMK_team_entitlement) Many-To-One relationship.
 
 |Property|Value|
@@ -1407,6 +1509,8 @@ Same as entitlement entity [team_entitlement](entitlement.md#BKMK_team_entitleme
 
 
 ### <a name="BKMK_team_entitlementchannel"></a> team_entitlementchannel
+
+**Added by**: Service Solution
 
 Same as entitlementchannel entity [team_entitlementchannel](entitlementchannel.md#BKMK_team_entitlementchannel) Many-To-One relationship.
 
@@ -1423,6 +1527,8 @@ Same as entitlementchannel entity [team_entitlementchannel](entitlementchannel.m
 
 ### <a name="BKMK_team_incidents"></a> team_incidents
 
+**Added by**: Service Solution
+
 Same as incident entity [team_incidents](incident.md#BKMK_team_incidents) Many-To-One relationship.
 
 |Property|Value|
@@ -1437,6 +1543,8 @@ Same as incident entity [team_incidents](incident.md#BKMK_team_incidents) Many-T
 
 
 ### <a name="BKMK_team_incidentresolution"></a> team_incidentresolution
+
+**Added by**: Service Solution
 
 Same as incidentresolution entity [team_incidentresolution](incidentresolution.md#BKMK_team_incidentresolution) Many-To-One relationship.
 
@@ -1453,6 +1561,8 @@ Same as incidentresolution entity [team_incidentresolution](incidentresolution.m
 
 ### <a name="BKMK_team_knowledgearticleincident"></a> team_knowledgearticleincident
 
+**Added by**: Service Solution
+
 Same as knowledgearticleincident entity [team_knowledgearticleincident](knowledgearticleincident.md#BKMK_team_knowledgearticleincident) Many-To-One relationship.
 
 |Property|Value|
@@ -1467,6 +1577,8 @@ Same as knowledgearticleincident entity [team_knowledgearticleincident](knowledg
 
 
 ### <a name="BKMK_team_service_appointments"></a> team_service_appointments
+
+**Added by**: Service Solution
 
 Same as serviceappointment entity [team_service_appointments](serviceappointment.md#BKMK_team_service_appointments) Many-To-One relationship.
 
@@ -1483,6 +1595,8 @@ Same as serviceappointment entity [team_service_appointments](serviceappointment
 
 ### <a name="BKMK_team_resource_specs"></a> team_resource_specs
 
+**Added by**: Service Solution
+
 Same as resourcespec entity [team_resource_specs](resourcespec.md#BKMK_team_resource_specs) Many-To-One relationship.
 
 |Property|Value|
@@ -1498,6 +1612,8 @@ Same as resourcespec entity [team_resource_specs](resourcespec.md#BKMK_team_reso
 
 ### <a name="BKMK_team_resource_groups"></a> team_resource_groups
 
+**Added by**: Service Solution
+
 Same as resourcegroup entity [team_resource_groups](resourcegroup.md#BKMK_team_resource_groups) Many-To-One relationship.
 
 |Property|Value|
@@ -1511,7 +1627,128 @@ Same as resourcegroup entity [team_resource_groups](resourcegroup.md#BKMK_team_r
 |CascadeConfiguration|Assign: NoCascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_entitlemententityallocationtypemapping"></a> team_entitlemententityallocationtypemapping
+
+**Added by**: Service Patch Solution
+
+Same as entitlemententityallocationtypemapping entity [team_entitlemententityallocationtypemapping](entitlemententityallocationtypemapping.md#BKMK_team_entitlemententityallocationtypemapping) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|entitlemententityallocationtypemapping|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_entitlemententityallocationtypemapping|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_callablecontext"></a> team_msdyn_callablecontext
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_callablecontext entity [team_msdyn_callablecontext](msdyn_callablecontext.md#BKMK_team_msdyn_callablecontext) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_callablecontext|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_callablecontext|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_playbookactivity"></a> team_msdyn_playbookactivity
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_playbookactivity entity [team_msdyn_playbookactivity](msdyn_playbookactivity.md#BKMK_team_msdyn_playbookactivity) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_playbookactivity|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_playbookactivity|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_playbookactivityattribute"></a> team_msdyn_playbookactivityattribute
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_playbookactivityattribute entity [team_msdyn_playbookactivityattribute](msdyn_playbookactivityattribute.md#BKMK_team_msdyn_playbookactivityattribute) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_playbookactivityattribute|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_playbookactivityattribute|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_playbookcategory"></a> team_msdyn_playbookcategory
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_playbookcategory entity [team_msdyn_playbookcategory](msdyn_playbookcategory.md#BKMK_team_msdyn_playbookcategory) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_playbookcategory|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_playbookcategory|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_playbookinstance"></a> team_msdyn_playbookinstance
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_playbookinstance entity [team_msdyn_playbookinstance](msdyn_playbookinstance.md#BKMK_team_msdyn_playbookinstance) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_playbookinstance|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_playbookinstance|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_playbooktemplate"></a> team_msdyn_playbooktemplate
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_playbooktemplate entity [team_msdyn_playbooktemplate](msdyn_playbooktemplate.md#BKMK_team_msdyn_playbooktemplate) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_playbooktemplate|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|False|
+|ReferencedEntityNavigationPropertyName|team_msdyn_playbooktemplate|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_customer_opportunity_roles"></a> team_customer_opportunity_roles
+
+**Added by**: Sales Solution
 
 Same as customeropportunityrole entity [team_customer_opportunity_roles](customeropportunityrole.md#BKMK_team_customer_opportunity_roles) Many-To-One relationship.
 
@@ -1528,6 +1765,8 @@ Same as customeropportunityrole entity [team_customer_opportunity_roles](custome
 
 ### <a name="BKMK_team_invoices"></a> team_invoices
 
+**Added by**: Sales Solution
+
 Same as invoice entity [team_invoices](invoice.md#BKMK_team_invoices) Many-To-One relationship.
 
 |Property|Value|
@@ -1542,6 +1781,8 @@ Same as invoice entity [team_invoices](invoice.md#BKMK_team_invoices) Many-To-On
 
 
 ### <a name="BKMK_team_invoicedetail"></a> team_invoicedetail
+
+**Added by**: Sales Solution
 
 Same as invoicedetail entity [team_invoicedetail](invoicedetail.md#BKMK_team_invoicedetail) Many-To-One relationship.
 
@@ -1558,6 +1799,8 @@ Same as invoicedetail entity [team_invoicedetail](invoicedetail.md#BKMK_team_inv
 
 ### <a name="BKMK_team_opportunities"></a> team_opportunities
 
+**Added by**: Sales Solution
+
 Same as opportunity entity [team_opportunities](opportunity.md#BKMK_team_opportunities) Many-To-One relationship.
 
 |Property|Value|
@@ -1572,6 +1815,8 @@ Same as opportunity entity [team_opportunities](opportunity.md#BKMK_team_opportu
 
 
 ### <a name="BKMK_team_opportunityclose"></a> team_opportunityclose
+
+**Added by**: Sales Solution
 
 Same as opportunityclose entity [team_opportunityclose](opportunityclose.md#BKMK_team_opportunityclose) Many-To-One relationship.
 
@@ -1588,6 +1833,8 @@ Same as opportunityclose entity [team_opportunityclose](opportunityclose.md#BKMK
 
 ### <a name="BKMK_team_opportunityproduct"></a> team_opportunityproduct
 
+**Added by**: Sales Solution
+
 Same as opportunityproduct entity [team_opportunityproduct](opportunityproduct.md#BKMK_team_opportunityproduct) Many-To-One relationship.
 
 |Property|Value|
@@ -1602,6 +1849,8 @@ Same as opportunityproduct entity [team_opportunityproduct](opportunityproduct.m
 
 
 ### <a name="BKMK_team_orderclose"></a> team_orderclose
+
+**Added by**: Sales Solution
 
 Same as orderclose entity [team_orderclose](orderclose.md#BKMK_team_orderclose) Many-To-One relationship.
 
@@ -1618,6 +1867,8 @@ Same as orderclose entity [team_orderclose](orderclose.md#BKMK_team_orderclose) 
 
 ### <a name="BKMK_team_quotes"></a> team_quotes
 
+**Added by**: Sales Solution
+
 Same as quote entity [team_quotes](quote.md#BKMK_team_quotes) Many-To-One relationship.
 
 |Property|Value|
@@ -1632,6 +1883,8 @@ Same as quote entity [team_quotes](quote.md#BKMK_team_quotes) Many-To-One relati
 
 
 ### <a name="BKMK_team_quoteclose"></a> team_quoteclose
+
+**Added by**: Sales Solution
 
 Same as quoteclose entity [team_quoteclose](quoteclose.md#BKMK_team_quoteclose) Many-To-One relationship.
 
@@ -1648,6 +1901,8 @@ Same as quoteclose entity [team_quoteclose](quoteclose.md#BKMK_team_quoteclose) 
 
 ### <a name="BKMK_team_quotedetail"></a> team_quotedetail
 
+**Added by**: Sales Solution
+
 Same as quotedetail entity [team_quotedetail](quotedetail.md#BKMK_team_quotedetail) Many-To-One relationship.
 
 |Property|Value|
@@ -1662,6 +1917,8 @@ Same as quotedetail entity [team_quotedetail](quotedetail.md#BKMK_team_quotedeta
 
 
 ### <a name="BKMK_team_orders"></a> team_orders
+
+**Added by**: Sales Solution
 
 Same as salesorder entity [team_orders](salesorder.md#BKMK_team_orders) Many-To-One relationship.
 
@@ -1678,6 +1935,8 @@ Same as salesorder entity [team_orders](salesorder.md#BKMK_team_orders) Many-To-
 
 ### <a name="BKMK_team_salesorderdetail"></a> team_salesorderdetail
 
+**Added by**: Sales Solution
+
 Same as salesorderdetail entity [team_salesorderdetail](salesorderdetail.md#BKMK_team_salesorderdetail) Many-To-One relationship.
 
 |Property|Value|
@@ -1691,7 +1950,162 @@ Same as salesorderdetail entity [team_salesorderdetail](salesorderdetail.md#BKMK
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_adminsettingsentity"></a> team_adminsettingsentity
+
+**Added by**: Sales Patch Solution
+
+Same as adminsettingsentity entity [team_adminsettingsentity](adminsettingsentity.md#BKMK_team_adminsettingsentity) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|adminsettingsentity|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_adminsettingsentity|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_forecastdefinition"></a> team_msdyn_forecastdefinition
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_forecastdefinition entity [team_msdyn_forecastdefinition](msdyn_forecastdefinition.md#BKMK_team_msdyn_forecastdefinition) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_forecastdefinition|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|False|
+|ReferencedEntityNavigationPropertyName|team_msdyn_forecastdefinition|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_forecastinstance"></a> team_msdyn_forecastinstance
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_forecastinstance entity [team_msdyn_forecastinstance](msdyn_forecastinstance.md#BKMK_team_msdyn_forecastinstance) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_forecastinstance|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|False|
+|ReferencedEntityNavigationPropertyName|team_msdyn_forecastinstance|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_forecastrecurrence"></a> team_msdyn_forecastrecurrence
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_forecastrecurrence entity [team_msdyn_forecastrecurrence](msdyn_forecastrecurrence.md#BKMK_team_msdyn_forecastrecurrence) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_forecastrecurrence|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|False|
+|ReferencedEntityNavigationPropertyName|team_msdyn_forecastrecurrence|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_relationshipinsightsunifiedconfig"></a> team_msdyn_relationshipinsightsunifiedconfig
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_relationshipinsightsunifiedconfig entity [team_msdyn_relationshipinsightsunifiedconfig](msdyn_relationshipinsightsunifiedconfig.md#BKMK_team_msdyn_relationshipinsightsunifiedconfig) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_relationshipinsightsunifiedconfig|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_relationshipinsightsunifiedconfig|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_siconfig"></a> team_msdyn_siconfig
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_siconfig entity [team_msdyn_siconfig](msdyn_siconfig.md#BKMK_team_msdyn_siconfig) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_siconfig|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_siconfig|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_untrackedappointment"></a> team_msdyn_untrackedappointment
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_untrackedappointment entity [team_msdyn_untrackedappointment](msdyn_untrackedappointment.md#BKMK_team_msdyn_untrackedappointment) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_untrackedappointment|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_untrackedappointment|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_notesanalysisconfig"></a> team_msdyn_notesanalysisconfig
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_notesanalysisconfig entity [team_msdyn_notesanalysisconfig](msdyn_notesanalysisconfig.md#BKMK_team_msdyn_notesanalysisconfig) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_notesanalysisconfig|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_notesanalysisconfig|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_icebreakersconfig"></a> team_msdyn_icebreakersconfig
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_icebreakersconfig entity [team_msdyn_icebreakersconfig](msdyn_icebreakersconfig.md#BKMK_team_msdyn_icebreakersconfig) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_icebreakersconfig|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_icebreakersconfig|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_postalbum"></a> team_msdyn_postalbum
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_postalbum entity [team_msdyn_postalbum](msdyn_postalbum.md#BKMK_team_msdyn_postalbum) Many-To-One relationship.
 
@@ -1708,6 +2122,8 @@ Same as msdyn_postalbum entity [team_msdyn_postalbum](msdyn_postalbum.md#BKMK_te
 
 ### <a name="BKMK_team_msdyn_wallsavedqueryusersettings"></a> team_msdyn_wallsavedqueryusersettings
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_wallsavedqueryusersettings entity [team_msdyn_wallsavedqueryusersettings](msdyn_wallsavedqueryusersettings.md#BKMK_team_msdyn_wallsavedqueryusersettings) Many-To-One relationship.
 
 |Property|Value|
@@ -1721,7 +2137,128 @@ Same as msdyn_wallsavedqueryusersettings entity [team_msdyn_wallsavedqueryuserse
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msfp_emailtemplate"></a> team_msfp_emailtemplate
+
+**Added by**: Active Solution Solution
+
+Same as msfp_emailtemplate entity [team_msfp_emailtemplate](msfp_emailtemplate.md#BKMK_team_msfp_emailtemplate) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msfp_emailtemplate|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msfp_emailtemplate|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msfp_question"></a> team_msfp_question
+
+**Added by**: Active Solution Solution
+
+Same as msfp_question entity [team_msfp_question](msfp_question.md#BKMK_team_msfp_question) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msfp_question|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msfp_question|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msfp_questionresponse"></a> team_msfp_questionresponse
+
+**Added by**: Active Solution Solution
+
+Same as msfp_questionresponse entity [team_msfp_questionresponse](msfp_questionresponse.md#BKMK_team_msfp_questionresponse) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msfp_questionresponse|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msfp_questionresponse|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msfp_survey"></a> team_msfp_survey
+
+**Added by**: Active Solution Solution
+
+Same as msfp_survey entity [team_msfp_survey](msfp_survey.md#BKMK_team_msfp_survey) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msfp_survey|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msfp_survey|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_msfp_surveyinvite_team_owningteam"></a> msfp_surveyinvite_team_owningteam
+
+**Added by**: Active Solution Solution
+
+Same as msfp_surveyinvite entity [msfp_surveyinvite_team_owningteam](msfp_surveyinvite.md#BKMK_msfp_surveyinvite_team_owningteam) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msfp_surveyinvite|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|msfp_surveyinvite_team_owningteam|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_msfp_surveyresponse_team_owningteam"></a> msfp_surveyresponse_team_owningteam
+
+**Added by**: Active Solution Solution
+
+Same as msfp_surveyresponse entity [msfp_surveyresponse_team_owningteam](msfp_surveyresponse.md#BKMK_msfp_surveyresponse_team_owningteam) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msfp_surveyresponse|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|msfp_surveyresponse_team_owningteam|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msfp_unsubscribedrecipient"></a> team_msfp_unsubscribedrecipient
+
+**Added by**: Active Solution Solution
+
+Same as msfp_unsubscribedrecipient entity [team_msfp_unsubscribedrecipient](msfp_unsubscribedrecipient.md#BKMK_team_msfp_unsubscribedrecipient) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msfp_unsubscribedrecipient|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msfp_unsubscribedrecipient|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_actual"></a> team_msdyn_actual
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_actual entity [team_msdyn_actual](msdyn_actual.md#BKMK_team_msdyn_actual) Many-To-One relationship.
 
@@ -1736,7 +2273,26 @@ Same as msdyn_actual entity [team_msdyn_actual](msdyn_actual.md#BKMK_team_msdyn_
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_bookableresourceassociation"></a> team_msdyn_bookableresourceassociation
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_bookableresourceassociation entity [team_msdyn_bookableresourceassociation](msdyn_bookableresourceassociation.md#BKMK_team_msdyn_bookableresourceassociation) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_bookableresourceassociation|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_bookableresourceassociation|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_msdyn_bookingalert_team_owningteam"></a> msdyn_bookingalert_team_owningteam
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_bookingalert entity [msdyn_bookingalert_team_owningteam](msdyn_bookingalert.md#BKMK_msdyn_bookingalert_team_owningteam) Many-To-One relationship.
 
@@ -1753,6 +2309,8 @@ Same as msdyn_bookingalert entity [msdyn_bookingalert_team_owningteam](msdyn_boo
 
 ### <a name="BKMK_team_msdyn_bookingalertstatus"></a> team_msdyn_bookingalertstatus
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_bookingalertstatus entity [team_msdyn_bookingalertstatus](msdyn_bookingalertstatus.md#BKMK_team_msdyn_bookingalertstatus) Many-To-One relationship.
 
 |Property|Value|
@@ -1767,6 +2325,8 @@ Same as msdyn_bookingalertstatus entity [team_msdyn_bookingalertstatus](msdyn_bo
 
 
 ### <a name="BKMK_team_msdyn_bookingchange"></a> team_msdyn_bookingchange
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_bookingchange entity [team_msdyn_bookingchange](msdyn_bookingchange.md#BKMK_team_msdyn_bookingchange) Many-To-One relationship.
 
@@ -1783,6 +2343,8 @@ Same as msdyn_bookingchange entity [team_msdyn_bookingchange](msdyn_bookingchang
 
 ### <a name="BKMK_team_msdyn_bookingrule"></a> team_msdyn_bookingrule
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_bookingrule entity [team_msdyn_bookingrule](msdyn_bookingrule.md#BKMK_team_msdyn_bookingrule) Many-To-One relationship.
 
 |Property|Value|
@@ -1798,6 +2360,8 @@ Same as msdyn_bookingrule entity [team_msdyn_bookingrule](msdyn_bookingrule.md#B
 
 ### <a name="BKMK_team_msdyn_bookingsetupmetadata"></a> team_msdyn_bookingsetupmetadata
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_bookingsetupmetadata entity [team_msdyn_bookingsetupmetadata](msdyn_bookingsetupmetadata.md#BKMK_team_msdyn_bookingsetupmetadata) Many-To-One relationship.
 
 |Property|Value|
@@ -1811,7 +2375,26 @@ Same as msdyn_bookingsetupmetadata entity [team_msdyn_bookingsetupmetadata](msdy
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_businessclosure"></a> team_msdyn_businessclosure
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_businessclosure entity [team_msdyn_businessclosure](msdyn_businessclosure.md#BKMK_team_msdyn_businessclosure) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_businessclosure|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_businessclosure|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_clientextension"></a> team_msdyn_clientextension
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_clientextension entity [team_msdyn_clientextension](msdyn_clientextension.md#BKMK_team_msdyn_clientextension) Many-To-One relationship.
 
@@ -1828,6 +2411,8 @@ Same as msdyn_clientextension entity [team_msdyn_clientextension](msdyn_clientex
 
 ### <a name="BKMK_team_msdyn_configuration"></a> team_msdyn_configuration
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_configuration entity [team_msdyn_configuration](msdyn_configuration.md#BKMK_team_msdyn_configuration) Many-To-One relationship.
 
 |Property|Value|
@@ -1842,6 +2427,8 @@ Same as msdyn_configuration entity [team_msdyn_configuration](msdyn_configuratio
 
 
 ### <a name="BKMK_team_msdyn_priority"></a> team_msdyn_priority
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_priority entity [team_msdyn_priority](msdyn_priority.md#BKMK_team_msdyn_priority) Many-To-One relationship.
 
@@ -1858,6 +2445,8 @@ Same as msdyn_priority entity [team_msdyn_priority](msdyn_priority.md#BKMK_team_
 
 ### <a name="BKMK_team_msdyn_requirementcharacteristic"></a> team_msdyn_requirementcharacteristic
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_requirementcharacteristic entity [team_msdyn_requirementcharacteristic](msdyn_requirementcharacteristic.md#BKMK_team_msdyn_requirementcharacteristic) Many-To-One relationship.
 
 |Property|Value|
@@ -1871,7 +2460,26 @@ Same as msdyn_requirementcharacteristic entity [team_msdyn_requirementcharacteri
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_requirementgroup"></a> team_msdyn_requirementgroup
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_requirementgroup entity [team_msdyn_requirementgroup](msdyn_requirementgroup.md#BKMK_team_msdyn_requirementgroup) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_requirementgroup|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_requirementgroup|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_requirementorganizationunit"></a> team_msdyn_requirementorganizationunit
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_requirementorganizationunit entity [team_msdyn_requirementorganizationunit](msdyn_requirementorganizationunit.md#BKMK_team_msdyn_requirementorganizationunit) Many-To-One relationship.
 
@@ -1886,7 +2494,26 @@ Same as msdyn_requirementorganizationunit entity [team_msdyn_requirementorganiza
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_requirementrelationship"></a> team_msdyn_requirementrelationship
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_requirementrelationship entity [team_msdyn_requirementrelationship](msdyn_requirementrelationship.md#BKMK_team_msdyn_requirementrelationship) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_requirementrelationship|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_requirementrelationship|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_requirementresourcecategory"></a> team_msdyn_requirementresourcecategory
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_requirementresourcecategory entity [team_msdyn_requirementresourcecategory](msdyn_requirementresourcecategory.md#BKMK_team_msdyn_requirementresourcecategory) Many-To-One relationship.
 
@@ -1903,6 +2530,8 @@ Same as msdyn_requirementresourcecategory entity [team_msdyn_requirementresource
 
 ### <a name="BKMK_team_msdyn_requirementresourcepreference"></a> team_msdyn_requirementresourcepreference
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_requirementresourcepreference entity [team_msdyn_requirementresourcepreference](msdyn_requirementresourcepreference.md#BKMK_team_msdyn_requirementresourcepreference) Many-To-One relationship.
 
 |Property|Value|
@@ -1917,6 +2546,8 @@ Same as msdyn_requirementresourcepreference entity [team_msdyn_requirementresour
 
 
 ### <a name="BKMK_team_msdyn_requirementstatus"></a> team_msdyn_requirementstatus
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_requirementstatus entity [team_msdyn_requirementstatus](msdyn_requirementstatus.md#BKMK_team_msdyn_requirementstatus) Many-To-One relationship.
 
@@ -1933,6 +2564,8 @@ Same as msdyn_requirementstatus entity [team_msdyn_requirementstatus](msdyn_requ
 
 ### <a name="BKMK_team_msdyn_resourcerequirement"></a> team_msdyn_resourcerequirement
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_resourcerequirement entity [team_msdyn_resourcerequirement](msdyn_resourcerequirement.md#BKMK_team_msdyn_resourcerequirement) Many-To-One relationship.
 
 |Property|Value|
@@ -1947,6 +2580,8 @@ Same as msdyn_resourcerequirement entity [team_msdyn_resourcerequirement](msdyn_
 
 
 ### <a name="BKMK_team_msdyn_resourcerequirementdetail"></a> team_msdyn_resourcerequirementdetail
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_resourcerequirementdetail entity [team_msdyn_resourcerequirementdetail](msdyn_resourcerequirementdetail.md#BKMK_team_msdyn_resourcerequirementdetail) Many-To-One relationship.
 
@@ -1963,6 +2598,8 @@ Same as msdyn_resourcerequirementdetail entity [team_msdyn_resourcerequirementde
 
 ### <a name="BKMK_team_msdyn_resourceterritory"></a> team_msdyn_resourceterritory
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_resourceterritory entity [team_msdyn_resourceterritory](msdyn_resourceterritory.md#BKMK_team_msdyn_resourceterritory) Many-To-One relationship.
 
 |Property|Value|
@@ -1977,6 +2614,8 @@ Same as msdyn_resourceterritory entity [team_msdyn_resourceterritory](msdyn_reso
 
 
 ### <a name="BKMK_team_msdyn_scheduleboardsetting"></a> team_msdyn_scheduleboardsetting
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_scheduleboardsetting entity [team_msdyn_scheduleboardsetting](msdyn_scheduleboardsetting.md#BKMK_team_msdyn_scheduleboardsetting) Many-To-One relationship.
 
@@ -1993,6 +2632,8 @@ Same as msdyn_scheduleboardsetting entity [team_msdyn_scheduleboardsetting](msdy
 
 ### <a name="BKMK_team_msdyn_systemuserschedulersetting"></a> team_msdyn_systemuserschedulersetting
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_systemuserschedulersetting entity [team_msdyn_systemuserschedulersetting](msdyn_systemuserschedulersetting.md#BKMK_team_msdyn_systemuserschedulersetting) Many-To-One relationship.
 
 |Property|Value|
@@ -2007,6 +2648,8 @@ Same as msdyn_systemuserschedulersetting entity [team_msdyn_systemuserschedulers
 
 
 ### <a name="BKMK_team_msdyn_timegroup"></a> team_msdyn_timegroup
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_timegroup entity [team_msdyn_timegroup](msdyn_timegroup.md#BKMK_team_msdyn_timegroup) Many-To-One relationship.
 
@@ -2023,6 +2666,8 @@ Same as msdyn_timegroup entity [team_msdyn_timegroup](msdyn_timegroup.md#BKMK_te
 
 ### <a name="BKMK_team_msdyn_timegroupdetail"></a> team_msdyn_timegroupdetail
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_timegroupdetail entity [team_msdyn_timegroupdetail](msdyn_timegroupdetail.md#BKMK_team_msdyn_timegroupdetail) Many-To-One relationship.
 
 |Property|Value|
@@ -2037,6 +2682,8 @@ Same as msdyn_timegroupdetail entity [team_msdyn_timegroupdetail](msdyn_timegrou
 
 
 ### <a name="BKMK_team_msdyn_transactionorigin"></a> team_msdyn_transactionorigin
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_transactionorigin entity [team_msdyn_transactionorigin](msdyn_transactionorigin.md#BKMK_team_msdyn_transactionorigin) Many-To-One relationship.
 
@@ -2053,6 +2700,8 @@ Same as msdyn_transactionorigin entity [team_msdyn_transactionorigin](msdyn_tran
 
 ### <a name="BKMK_team_msdyn_workhourtemplate"></a> team_msdyn_workhourtemplate
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_workhourtemplate entity [team_msdyn_workhourtemplate](msdyn_workhourtemplate.md#BKMK_team_msdyn_workhourtemplate) Many-To-One relationship.
 
 |Property|Value|
@@ -2067,6 +2716,8 @@ Same as msdyn_workhourtemplate entity [team_msdyn_workhourtemplate](msdyn_workho
 
 
 ### <a name="BKMK_team_msdyn_accountpricelist"></a> team_msdyn_accountpricelist
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_accountpricelist entity [team_msdyn_accountpricelist](msdyn_accountpricelist.md#BKMK_team_msdyn_accountpricelist) Many-To-One relationship.
 
@@ -2083,6 +2734,8 @@ Same as msdyn_accountpricelist entity [team_msdyn_accountpricelist](msdyn_accoun
 
 ### <a name="BKMK_msdyn_approval_team_owningteam"></a> msdyn_approval_team_owningteam
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_approval entity [msdyn_approval_team_owningteam](msdyn_approval.md#BKMK_msdyn_approval_team_owningteam) Many-To-One relationship.
 
 |Property|Value|
@@ -2097,6 +2750,8 @@ Same as msdyn_approval entity [msdyn_approval_team_owningteam](msdyn_approval.md
 
 
 ### <a name="BKMK_team_msdyn_characteristicreqforteammember"></a> team_msdyn_characteristicreqforteammember
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_characteristicreqforteammember entity [team_msdyn_characteristicreqforteammember](msdyn_characteristicreqforteammember.md#BKMK_team_msdyn_characteristicreqforteammember) Many-To-One relationship.
 
@@ -2113,6 +2768,8 @@ Same as msdyn_characteristicreqforteammember entity [team_msdyn_characteristicre
 
 ### <a name="BKMK_team_msdyn_contactpricelist"></a> team_msdyn_contactpricelist
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_contactpricelist entity [team_msdyn_contactpricelist](msdyn_contactpricelist.md#BKMK_team_msdyn_contactpricelist) Many-To-One relationship.
 
 |Property|Value|
@@ -2127,6 +2784,8 @@ Same as msdyn_contactpricelist entity [team_msdyn_contactpricelist](msdyn_contac
 
 
 ### <a name="BKMK_team_msdyn_contractlinescheduleofvalue"></a> team_msdyn_contractlinescheduleofvalue
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_contractlinescheduleofvalue entity [team_msdyn_contractlinescheduleofvalue](msdyn_contractlinescheduleofvalue.md#BKMK_team_msdyn_contractlinescheduleofvalue) Many-To-One relationship.
 
@@ -2143,6 +2802,8 @@ Same as msdyn_contractlinescheduleofvalue entity [team_msdyn_contractlineschedul
 
 ### <a name="BKMK_team_msdyn_dataexport"></a> team_msdyn_dataexport
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_dataexport entity [team_msdyn_dataexport](msdyn_dataexport.md#BKMK_team_msdyn_dataexport) Many-To-One relationship.
 
 |Property|Value|
@@ -2158,6 +2819,8 @@ Same as msdyn_dataexport entity [team_msdyn_dataexport](msdyn_dataexport.md#BKMK
 
 ### <a name="BKMK_team_msdyn_delegation"></a> team_msdyn_delegation
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_delegation entity [team_msdyn_delegation](msdyn_delegation.md#BKMK_team_msdyn_delegation) Many-To-One relationship.
 
 |Property|Value|
@@ -2171,7 +2834,26 @@ Same as msdyn_delegation entity [team_msdyn_delegation](msdyn_delegation.md#BKMK
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_dimension"></a> team_msdyn_dimension
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_dimension entity [team_msdyn_dimension](msdyn_dimension.md#BKMK_team_msdyn_dimension) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_dimension|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_dimension|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_estimate"></a> team_msdyn_estimate
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_estimate entity [team_msdyn_estimate](msdyn_estimate.md#BKMK_team_msdyn_estimate) Many-To-One relationship.
 
@@ -2188,6 +2870,8 @@ Same as msdyn_estimate entity [team_msdyn_estimate](msdyn_estimate.md#BKMK_team_
 
 ### <a name="BKMK_team_msdyn_estimateline"></a> team_msdyn_estimateline
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_estimateline entity [team_msdyn_estimateline](msdyn_estimateline.md#BKMK_team_msdyn_estimateline) Many-To-One relationship.
 
 |Property|Value|
@@ -2202,6 +2886,8 @@ Same as msdyn_estimateline entity [team_msdyn_estimateline](msdyn_estimateline.m
 
 
 ### <a name="BKMK_team_msdyn_expense"></a> team_msdyn_expense
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_expense entity [team_msdyn_expense](msdyn_expense.md#BKMK_team_msdyn_expense) Many-To-One relationship.
 
@@ -2218,6 +2904,8 @@ Same as msdyn_expense entity [team_msdyn_expense](msdyn_expense.md#BKMK_team_msd
 
 ### <a name="BKMK_team_msdyn_expensereceipt"></a> team_msdyn_expensereceipt
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_expensereceipt entity [team_msdyn_expensereceipt](msdyn_expensereceipt.md#BKMK_team_msdyn_expensereceipt) Many-To-One relationship.
 
 |Property|Value|
@@ -2232,6 +2920,8 @@ Same as msdyn_expensereceipt entity [team_msdyn_expensereceipt](msdyn_expenserec
 
 
 ### <a name="BKMK_team_msdyn_fact"></a> team_msdyn_fact
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_fact entity [team_msdyn_fact](msdyn_fact.md#BKMK_team_msdyn_fact) Many-To-One relationship.
 
@@ -2248,6 +2938,8 @@ Same as msdyn_fact entity [team_msdyn_fact](msdyn_fact.md#BKMK_team_msdyn_fact) 
 
 ### <a name="BKMK_team_msdyn_fieldcomputation"></a> team_msdyn_fieldcomputation
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_fieldcomputation entity [team_msdyn_fieldcomputation](msdyn_fieldcomputation.md#BKMK_team_msdyn_fieldcomputation) Many-To-One relationship.
 
 |Property|Value|
@@ -2262,6 +2954,8 @@ Same as msdyn_fieldcomputation entity [team_msdyn_fieldcomputation](msdyn_fieldc
 
 
 ### <a name="BKMK_team_msdyn_findworkevent"></a> team_msdyn_findworkevent
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_findworkevent entity [team_msdyn_findworkevent](msdyn_findworkevent.md#BKMK_team_msdyn_findworkevent) Many-To-One relationship.
 
@@ -2278,6 +2972,8 @@ Same as msdyn_findworkevent entity [team_msdyn_findworkevent](msdyn_findworkeven
 
 ### <a name="BKMK_team_msdyn_integrationjob"></a> team_msdyn_integrationjob
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_integrationjob entity [team_msdyn_integrationjob](msdyn_integrationjob.md#BKMK_team_msdyn_integrationjob) Many-To-One relationship.
 
 |Property|Value|
@@ -2292,6 +2988,8 @@ Same as msdyn_integrationjob entity [team_msdyn_integrationjob](msdyn_integratio
 
 
 ### <a name="BKMK_team_msdyn_integrationjobdetail"></a> team_msdyn_integrationjobdetail
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_integrationjobdetail entity [team_msdyn_integrationjobdetail](msdyn_integrationjobdetail.md#BKMK_team_msdyn_integrationjobdetail) Many-To-One relationship.
 
@@ -2308,6 +3006,8 @@ Same as msdyn_integrationjobdetail entity [team_msdyn_integrationjobdetail](msdy
 
 ### <a name="BKMK_team_msdyn_invoicelinetransaction"></a> team_msdyn_invoicelinetransaction
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_invoicelinetransaction entity [team_msdyn_invoicelinetransaction](msdyn_invoicelinetransaction.md#BKMK_team_msdyn_invoicelinetransaction) Many-To-One relationship.
 
 |Property|Value|
@@ -2322,6 +3022,8 @@ Same as msdyn_invoicelinetransaction entity [team_msdyn_invoicelinetransaction](
 
 
 ### <a name="BKMK_team_msdyn_journal"></a> team_msdyn_journal
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_journal entity [team_msdyn_journal](msdyn_journal.md#BKMK_team_msdyn_journal) Many-To-One relationship.
 
@@ -2338,6 +3040,8 @@ Same as msdyn_journal entity [team_msdyn_journal](msdyn_journal.md#BKMK_team_msd
 
 ### <a name="BKMK_team_msdyn_journalline"></a> team_msdyn_journalline
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_journalline entity [team_msdyn_journalline](msdyn_journalline.md#BKMK_team_msdyn_journalline) Many-To-One relationship.
 
 |Property|Value|
@@ -2352,6 +3056,8 @@ Same as msdyn_journalline entity [team_msdyn_journalline](msdyn_journalline.md#B
 
 
 ### <a name="BKMK_team_msdyn_opportunitylineresourcecategory"></a> team_msdyn_opportunitylineresourcecategory
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_opportunitylineresourcecategory entity [team_msdyn_opportunitylineresourcecategory](msdyn_opportunitylineresourcecategory.md#BKMK_team_msdyn_opportunitylineresourcecategory) Many-To-One relationship.
 
@@ -2368,6 +3074,8 @@ Same as msdyn_opportunitylineresourcecategory entity [team_msdyn_opportunityline
 
 ### <a name="BKMK_team_msdyn_opportunitylinetransaction"></a> team_msdyn_opportunitylinetransaction
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_opportunitylinetransaction entity [team_msdyn_opportunitylinetransaction](msdyn_opportunitylinetransaction.md#BKMK_team_msdyn_opportunitylinetransaction) Many-To-One relationship.
 
 |Property|Value|
@@ -2382,6 +3090,8 @@ Same as msdyn_opportunitylinetransaction entity [team_msdyn_opportunitylinetrans
 
 
 ### <a name="BKMK_team_msdyn_opportunitylinetransactioncategory"></a> team_msdyn_opportunitylinetransactioncategory
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_opportunitylinetransactioncategory entity [team_msdyn_opportunitylinetransactioncategory](msdyn_opportunitylinetransactioncategory.md#BKMK_team_msdyn_opportunitylinetransactioncategory) Many-To-One relationship.
 
@@ -2398,6 +3108,8 @@ Same as msdyn_opportunitylinetransactioncategory entity [team_msdyn_opportunityl
 
 ### <a name="BKMK_team_msdyn_opportunitylinetransactionclassificatio"></a> team_msdyn_opportunitylinetransactionclassificatio
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_opportunitylinetransactionclassificatio entity [team_msdyn_opportunitylinetransactionclassificatio](msdyn_opportunitylinetransactionclassificatio.md#BKMK_team_msdyn_opportunitylinetransactionclassificatio) Many-To-One relationship.
 
 |Property|Value|
@@ -2412,6 +3124,8 @@ Same as msdyn_opportunitylinetransactionclassificatio entity [team_msdyn_opportu
 
 
 ### <a name="BKMK_team_msdyn_opportunitypricelist"></a> team_msdyn_opportunitypricelist
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_opportunitypricelist entity [team_msdyn_opportunitypricelist](msdyn_opportunitypricelist.md#BKMK_team_msdyn_opportunitypricelist) Many-To-One relationship.
 
@@ -2428,6 +3142,8 @@ Same as msdyn_opportunitypricelist entity [team_msdyn_opportunitypricelist](msdy
 
 ### <a name="BKMK_team_msdyn_orderlineresourcecategory"></a> team_msdyn_orderlineresourcecategory
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_orderlineresourcecategory entity [team_msdyn_orderlineresourcecategory](msdyn_orderlineresourcecategory.md#BKMK_team_msdyn_orderlineresourcecategory) Many-To-One relationship.
 
 |Property|Value|
@@ -2442,6 +3158,8 @@ Same as msdyn_orderlineresourcecategory entity [team_msdyn_orderlineresourcecate
 
 
 ### <a name="BKMK_team_msdyn_orderlinetransaction"></a> team_msdyn_orderlinetransaction
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_orderlinetransaction entity [team_msdyn_orderlinetransaction](msdyn_orderlinetransaction.md#BKMK_team_msdyn_orderlinetransaction) Many-To-One relationship.
 
@@ -2458,6 +3176,8 @@ Same as msdyn_orderlinetransaction entity [team_msdyn_orderlinetransaction](msdy
 
 ### <a name="BKMK_team_msdyn_orderlinetransactioncategory"></a> team_msdyn_orderlinetransactioncategory
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_orderlinetransactioncategory entity [team_msdyn_orderlinetransactioncategory](msdyn_orderlinetransactioncategory.md#BKMK_team_msdyn_orderlinetransactioncategory) Many-To-One relationship.
 
 |Property|Value|
@@ -2472,6 +3192,8 @@ Same as msdyn_orderlinetransactioncategory entity [team_msdyn_orderlinetransacti
 
 
 ### <a name="BKMK_team_msdyn_orderlinetransactionclassification"></a> team_msdyn_orderlinetransactionclassification
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_orderlinetransactionclassification entity [team_msdyn_orderlinetransactionclassification](msdyn_orderlinetransactionclassification.md#BKMK_team_msdyn_orderlinetransactionclassification) Many-To-One relationship.
 
@@ -2488,6 +3210,8 @@ Same as msdyn_orderlinetransactionclassification entity [team_msdyn_orderlinetra
 
 ### <a name="BKMK_team_msdyn_orderpricelist"></a> team_msdyn_orderpricelist
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_orderpricelist entity [team_msdyn_orderpricelist](msdyn_orderpricelist.md#BKMK_team_msdyn_orderpricelist) Many-To-One relationship.
 
 |Property|Value|
@@ -2502,6 +3226,8 @@ Same as msdyn_orderpricelist entity [team_msdyn_orderpricelist](msdyn_orderprice
 
 
 ### <a name="BKMK_team_msdyn_project"></a> team_msdyn_project
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_project entity [team_msdyn_project](msdyn_project.md#BKMK_team_msdyn_project) Many-To-One relationship.
 
@@ -2518,6 +3244,8 @@ Same as msdyn_project entity [team_msdyn_project](msdyn_project.md#BKMK_team_msd
 
 ### <a name="BKMK_team_msdyn_projectapproval"></a> team_msdyn_projectapproval
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_projectapproval entity [team_msdyn_projectapproval](msdyn_projectapproval.md#BKMK_team_msdyn_projectapproval) Many-To-One relationship.
 
 |Property|Value|
@@ -2532,6 +3260,8 @@ Same as msdyn_projectapproval entity [team_msdyn_projectapproval](msdyn_projecta
 
 
 ### <a name="BKMK_team_msdyn_projectpricelist"></a> team_msdyn_projectpricelist
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_projectpricelist entity [team_msdyn_projectpricelist](msdyn_projectpricelist.md#BKMK_team_msdyn_projectpricelist) Many-To-One relationship.
 
@@ -2548,6 +3278,8 @@ Same as msdyn_projectpricelist entity [team_msdyn_projectpricelist](msdyn_projec
 
 ### <a name="BKMK_team_msdyn_projecttask"></a> team_msdyn_projecttask
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_projecttask entity [team_msdyn_projecttask](msdyn_projecttask.md#BKMK_team_msdyn_projecttask) Many-To-One relationship.
 
 |Property|Value|
@@ -2562,6 +3294,8 @@ Same as msdyn_projecttask entity [team_msdyn_projecttask](msdyn_projecttask.md#B
 
 
 ### <a name="BKMK_team_msdyn_projecttaskdependency"></a> team_msdyn_projecttaskdependency
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_projecttaskdependency entity [team_msdyn_projecttaskdependency](msdyn_projecttaskdependency.md#BKMK_team_msdyn_projecttaskdependency) Many-To-One relationship.
 
@@ -2578,6 +3312,8 @@ Same as msdyn_projecttaskdependency entity [team_msdyn_projecttaskdependency](ms
 
 ### <a name="BKMK_team_msdyn_projecttaskstatususer"></a> team_msdyn_projecttaskstatususer
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_projecttaskstatususer entity [team_msdyn_projecttaskstatususer](msdyn_projecttaskstatususer.md#BKMK_team_msdyn_projecttaskstatususer) Many-To-One relationship.
 
 |Property|Value|
@@ -2592,6 +3328,8 @@ Same as msdyn_projecttaskstatususer entity [team_msdyn_projecttaskstatususer](ms
 
 
 ### <a name="BKMK_team_msdyn_projectteam"></a> team_msdyn_projectteam
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_projectteam entity [team_msdyn_projectteam](msdyn_projectteam.md#BKMK_team_msdyn_projectteam) Many-To-One relationship.
 
@@ -2608,6 +3346,8 @@ Same as msdyn_projectteam entity [team_msdyn_projectteam](msdyn_projectteam.md#B
 
 ### <a name="BKMK_team_msdyn_projecttransactioncategory"></a> team_msdyn_projecttransactioncategory
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_projecttransactioncategory entity [team_msdyn_projecttransactioncategory](msdyn_projecttransactioncategory.md#BKMK_team_msdyn_projecttransactioncategory) Many-To-One relationship.
 
 |Property|Value|
@@ -2622,6 +3362,8 @@ Same as msdyn_projecttransactioncategory entity [team_msdyn_projecttransactionca
 
 
 ### <a name="BKMK_team_msdyn_quotelineanalyticsbreakdown"></a> team_msdyn_quotelineanalyticsbreakdown
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_quotelineanalyticsbreakdown entity [team_msdyn_quotelineanalyticsbreakdown](msdyn_quotelineanalyticsbreakdown.md#BKMK_team_msdyn_quotelineanalyticsbreakdown) Many-To-One relationship.
 
@@ -2638,6 +3380,8 @@ Same as msdyn_quotelineanalyticsbreakdown entity [team_msdyn_quotelineanalyticsb
 
 ### <a name="BKMK_team_msdyn_quotelineresourcecategory"></a> team_msdyn_quotelineresourcecategory
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_quotelineresourcecategory entity [team_msdyn_quotelineresourcecategory](msdyn_quotelineresourcecategory.md#BKMK_team_msdyn_quotelineresourcecategory) Many-To-One relationship.
 
 |Property|Value|
@@ -2652,6 +3396,8 @@ Same as msdyn_quotelineresourcecategory entity [team_msdyn_quotelineresourcecate
 
 
 ### <a name="BKMK_team_msdyn_quotelinescheduleofvalue"></a> team_msdyn_quotelinescheduleofvalue
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_quotelinescheduleofvalue entity [team_msdyn_quotelinescheduleofvalue](msdyn_quotelinescheduleofvalue.md#BKMK_team_msdyn_quotelinescheduleofvalue) Many-To-One relationship.
 
@@ -2668,6 +3414,8 @@ Same as msdyn_quotelinescheduleofvalue entity [team_msdyn_quotelinescheduleofval
 
 ### <a name="BKMK_team_msdyn_quotelinetransaction"></a> team_msdyn_quotelinetransaction
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_quotelinetransaction entity [team_msdyn_quotelinetransaction](msdyn_quotelinetransaction.md#BKMK_team_msdyn_quotelinetransaction) Many-To-One relationship.
 
 |Property|Value|
@@ -2682,6 +3430,8 @@ Same as msdyn_quotelinetransaction entity [team_msdyn_quotelinetransaction](msdy
 
 
 ### <a name="BKMK_team_msdyn_quotelinetransactioncategory"></a> team_msdyn_quotelinetransactioncategory
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_quotelinetransactioncategory entity [team_msdyn_quotelinetransactioncategory](msdyn_quotelinetransactioncategory.md#BKMK_team_msdyn_quotelinetransactioncategory) Many-To-One relationship.
 
@@ -2698,6 +3448,8 @@ Same as msdyn_quotelinetransactioncategory entity [team_msdyn_quotelinetransacti
 
 ### <a name="BKMK_team_msdyn_quotelinetransactionclassification"></a> team_msdyn_quotelinetransactionclassification
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_quotelinetransactionclassification entity [team_msdyn_quotelinetransactionclassification](msdyn_quotelinetransactionclassification.md#BKMK_team_msdyn_quotelinetransactionclassification) Many-To-One relationship.
 
 |Property|Value|
@@ -2712,6 +3464,8 @@ Same as msdyn_quotelinetransactionclassification entity [team_msdyn_quotelinetra
 
 
 ### <a name="BKMK_team_msdyn_quotepricelist"></a> team_msdyn_quotepricelist
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_quotepricelist entity [team_msdyn_quotepricelist](msdyn_quotepricelist.md#BKMK_team_msdyn_quotepricelist) Many-To-One relationship.
 
@@ -2728,6 +3482,8 @@ Same as msdyn_quotepricelist entity [team_msdyn_quotepricelist](msdyn_quoteprice
 
 ### <a name="BKMK_team_msdyn_resourceassignment"></a> team_msdyn_resourceassignment
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_resourceassignment entity [team_msdyn_resourceassignment](msdyn_resourceassignment.md#BKMK_team_msdyn_resourceassignment) Many-To-One relationship.
 
 |Property|Value|
@@ -2742,6 +3498,8 @@ Same as msdyn_resourceassignment entity [team_msdyn_resourceassignment](msdyn_re
 
 
 ### <a name="BKMK_team_msdyn_resourceassignmentdetail"></a> team_msdyn_resourceassignmentdetail
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_resourceassignmentdetail entity [team_msdyn_resourceassignmentdetail](msdyn_resourceassignmentdetail.md#BKMK_team_msdyn_resourceassignmentdetail) Many-To-One relationship.
 
@@ -2758,6 +3516,8 @@ Same as msdyn_resourceassignmentdetail entity [team_msdyn_resourceassignmentdeta
 
 ### <a name="BKMK_team_msdyn_resourcerequest"></a> team_msdyn_resourcerequest
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_resourcerequest entity [team_msdyn_resourcerequest](msdyn_resourcerequest.md#BKMK_team_msdyn_resourcerequest) Many-To-One relationship.
 
 |Property|Value|
@@ -2772,6 +3532,8 @@ Same as msdyn_resourcerequest entity [team_msdyn_resourcerequest](msdyn_resource
 
 
 ### <a name="BKMK_team_msdyn_rolecompetencyrequirement"></a> team_msdyn_rolecompetencyrequirement
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_rolecompetencyrequirement entity [team_msdyn_rolecompetencyrequirement](msdyn_rolecompetencyrequirement.md#BKMK_team_msdyn_rolecompetencyrequirement) Many-To-One relationship.
 
@@ -2788,6 +3550,8 @@ Same as msdyn_rolecompetencyrequirement entity [team_msdyn_rolecompetencyrequire
 
 ### <a name="BKMK_team_msdyn_roleutilization"></a> team_msdyn_roleutilization
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_roleutilization entity [team_msdyn_roleutilization](msdyn_roleutilization.md#BKMK_team_msdyn_roleutilization) Many-To-One relationship.
 
 |Property|Value|
@@ -2802,6 +3566,8 @@ Same as msdyn_roleutilization entity [team_msdyn_roleutilization](msdyn_roleutil
 
 
 ### <a name="BKMK_team_msdyn_timeentry"></a> team_msdyn_timeentry
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_timeentry entity [team_msdyn_timeentry](msdyn_timeentry.md#BKMK_team_msdyn_timeentry) Many-To-One relationship.
 
@@ -2818,6 +3584,8 @@ Same as msdyn_timeentry entity [team_msdyn_timeentry](msdyn_timeentry.md#BKMK_te
 
 ### <a name="BKMK_team_msdyn_timeoffcalendar"></a> team_msdyn_timeoffcalendar
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_timeoffcalendar entity [team_msdyn_timeoffcalendar](msdyn_timeoffcalendar.md#BKMK_team_msdyn_timeoffcalendar) Many-To-One relationship.
 
 |Property|Value|
@@ -2832,6 +3600,8 @@ Same as msdyn_timeoffcalendar entity [team_msdyn_timeoffcalendar](msdyn_timeoffc
 
 
 ### <a name="BKMK_team_msdyn_transactionconnection"></a> team_msdyn_transactionconnection
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_transactionconnection entity [team_msdyn_transactionconnection](msdyn_transactionconnection.md#BKMK_team_msdyn_transactionconnection) Many-To-One relationship.
 
@@ -2848,6 +3618,8 @@ Same as msdyn_transactionconnection entity [team_msdyn_transactionconnection](ms
 
 ### <a name="BKMK_team_msdyn_userworkhistory"></a> team_msdyn_userworkhistory
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_userworkhistory entity [team_msdyn_userworkhistory](msdyn_userworkhistory.md#BKMK_team_msdyn_userworkhistory) Many-To-One relationship.
 
 |Property|Value|
@@ -2863,6 +3635,8 @@ Same as msdyn_userworkhistory entity [team_msdyn_userworkhistory](msdyn_userwork
 
 ### <a name="BKMK_msdyn_team_msdyn_project_projectteamid"></a> msdyn_team_msdyn_project_projectteamid
 
+**Added by**: Project Service Automation Solution
+
 Same as msdyn_project entity [msdyn_team_msdyn_project_projectteamid](msdyn_project.md#BKMK_msdyn_team_msdyn_project_projectteamid) Many-To-One relationship.
 
 |Property|Value|
@@ -2876,7 +3650,111 @@ Same as msdyn_project entity [msdyn_team_msdyn_project_projectteamid](msdyn_proj
 |CascadeConfiguration|Assign: NoCascade<br />Delete: RemoveLink<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_analysiscomponent"></a> team_msdyn_analysiscomponent
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_analysiscomponent entity [team_msdyn_analysiscomponent](msdyn_analysiscomponent.md#BKMK_team_msdyn_analysiscomponent) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_analysiscomponent|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|False|
+|ReferencedEntityNavigationPropertyName|team_msdyn_analysiscomponent|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_analysisjob"></a> team_msdyn_analysisjob
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_analysisjob entity [team_msdyn_analysisjob](msdyn_analysisjob.md#BKMK_team_msdyn_analysisjob) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_analysisjob|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|False|
+|ReferencedEntityNavigationPropertyName|team_msdyn_analysisjob|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_analysisresult"></a> team_msdyn_analysisresult
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_analysisresult entity [team_msdyn_analysisresult](msdyn_analysisresult.md#BKMK_team_msdyn_analysisresult) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_analysisresult|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|False|
+|ReferencedEntityNavigationPropertyName|team_msdyn_analysisresult|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_analysisresultdetail"></a> team_msdyn_analysisresultdetail
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_analysisresultdetail entity [team_msdyn_analysisresultdetail](msdyn_analysisresultdetail.md#BKMK_team_msdyn_analysisresultdetail) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_analysisresultdetail|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_analysisresultdetail|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_solutionhealthrule"></a> team_msdyn_solutionhealthrule
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_solutionhealthrule entity [team_msdyn_solutionhealthrule](msdyn_solutionhealthrule.md#BKMK_team_msdyn_solutionhealthrule) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_solutionhealthrule|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_solutionhealthrule|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_solutionhealthruleargument"></a> team_msdyn_solutionhealthruleargument
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_solutionhealthruleargument entity [team_msdyn_solutionhealthruleargument](msdyn_solutionhealthruleargument.md#BKMK_team_msdyn_solutionhealthruleargument) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_solutionhealthruleargument|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_solutionhealthruleargument|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_agreement"></a> team_msdyn_agreement
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_agreement entity [team_msdyn_agreement](msdyn_agreement.md#BKMK_team_msdyn_agreement) Many-To-One relationship.
 
@@ -2893,6 +3771,8 @@ Same as msdyn_agreement entity [team_msdyn_agreement](msdyn_agreement.md#BKMK_te
 
 ### <a name="BKMK_team_msdyn_agreementbookingdate"></a> team_msdyn_agreementbookingdate
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_agreementbookingdate entity [team_msdyn_agreementbookingdate](msdyn_agreementbookingdate.md#BKMK_team_msdyn_agreementbookingdate) Many-To-One relationship.
 
 |Property|Value|
@@ -2907,6 +3787,8 @@ Same as msdyn_agreementbookingdate entity [team_msdyn_agreementbookingdate](msdy
 
 
 ### <a name="BKMK_team_msdyn_agreementbookingincident"></a> team_msdyn_agreementbookingincident
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_agreementbookingincident entity [team_msdyn_agreementbookingincident](msdyn_agreementbookingincident.md#BKMK_team_msdyn_agreementbookingincident) Many-To-One relationship.
 
@@ -2923,6 +3805,8 @@ Same as msdyn_agreementbookingincident entity [team_msdyn_agreementbookingincide
 
 ### <a name="BKMK_team_msdyn_agreementbookingproduct"></a> team_msdyn_agreementbookingproduct
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_agreementbookingproduct entity [team_msdyn_agreementbookingproduct](msdyn_agreementbookingproduct.md#BKMK_team_msdyn_agreementbookingproduct) Many-To-One relationship.
 
 |Property|Value|
@@ -2937,6 +3821,8 @@ Same as msdyn_agreementbookingproduct entity [team_msdyn_agreementbookingproduct
 
 
 ### <a name="BKMK_team_msdyn_agreementbookingservice"></a> team_msdyn_agreementbookingservice
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_agreementbookingservice entity [team_msdyn_agreementbookingservice](msdyn_agreementbookingservice.md#BKMK_team_msdyn_agreementbookingservice) Many-To-One relationship.
 
@@ -2953,6 +3839,8 @@ Same as msdyn_agreementbookingservice entity [team_msdyn_agreementbookingservice
 
 ### <a name="BKMK_team_msdyn_agreementbookingservicetask"></a> team_msdyn_agreementbookingservicetask
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_agreementbookingservicetask entity [team_msdyn_agreementbookingservicetask](msdyn_agreementbookingservicetask.md#BKMK_team_msdyn_agreementbookingservicetask) Many-To-One relationship.
 
 |Property|Value|
@@ -2967,6 +3855,8 @@ Same as msdyn_agreementbookingservicetask entity [team_msdyn_agreementbookingser
 
 
 ### <a name="BKMK_team_msdyn_agreementbookingsetup"></a> team_msdyn_agreementbookingsetup
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_agreementbookingsetup entity [team_msdyn_agreementbookingsetup](msdyn_agreementbookingsetup.md#BKMK_team_msdyn_agreementbookingsetup) Many-To-One relationship.
 
@@ -2983,6 +3873,8 @@ Same as msdyn_agreementbookingsetup entity [team_msdyn_agreementbookingsetup](ms
 
 ### <a name="BKMK_team_msdyn_agreementinvoicedate"></a> team_msdyn_agreementinvoicedate
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_agreementinvoicedate entity [team_msdyn_agreementinvoicedate](msdyn_agreementinvoicedate.md#BKMK_team_msdyn_agreementinvoicedate) Many-To-One relationship.
 
 |Property|Value|
@@ -2997,6 +3889,8 @@ Same as msdyn_agreementinvoicedate entity [team_msdyn_agreementinvoicedate](msdy
 
 
 ### <a name="BKMK_team_msdyn_agreementinvoiceproduct"></a> team_msdyn_agreementinvoiceproduct
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_agreementinvoiceproduct entity [team_msdyn_agreementinvoiceproduct](msdyn_agreementinvoiceproduct.md#BKMK_team_msdyn_agreementinvoiceproduct) Many-To-One relationship.
 
@@ -3013,6 +3907,8 @@ Same as msdyn_agreementinvoiceproduct entity [team_msdyn_agreementinvoiceproduct
 
 ### <a name="BKMK_team_msdyn_agreementinvoicesetup"></a> team_msdyn_agreementinvoicesetup
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_agreementinvoicesetup entity [team_msdyn_agreementinvoicesetup](msdyn_agreementinvoicesetup.md#BKMK_team_msdyn_agreementinvoicesetup) Many-To-One relationship.
 
 |Property|Value|
@@ -3027,6 +3923,8 @@ Same as msdyn_agreementinvoicesetup entity [team_msdyn_agreementinvoicesetup](ms
 
 
 ### <a name="BKMK_team_msdyn_agreementsubstatus"></a> team_msdyn_agreementsubstatus
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_agreementsubstatus entity [team_msdyn_agreementsubstatus](msdyn_agreementsubstatus.md#BKMK_team_msdyn_agreementsubstatus) Many-To-One relationship.
 
@@ -3043,6 +3941,8 @@ Same as msdyn_agreementsubstatus entity [team_msdyn_agreementsubstatus](msdyn_ag
 
 ### <a name="BKMK_team_msdyn_bookingjournal"></a> team_msdyn_bookingjournal
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_bookingjournal entity [team_msdyn_bookingjournal](msdyn_bookingjournal.md#BKMK_team_msdyn_bookingjournal) Many-To-One relationship.
 
 |Property|Value|
@@ -3057,6 +3957,8 @@ Same as msdyn_bookingjournal entity [team_msdyn_bookingjournal](msdyn_bookingjou
 
 
 ### <a name="BKMK_team_msdyn_bookingtimestamp"></a> team_msdyn_bookingtimestamp
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_bookingtimestamp entity [team_msdyn_bookingtimestamp](msdyn_bookingtimestamp.md#BKMK_team_msdyn_bookingtimestamp) Many-To-One relationship.
 
@@ -3073,6 +3975,8 @@ Same as msdyn_bookingtimestamp entity [team_msdyn_bookingtimestamp](msdyn_bookin
 
 ### <a name="BKMK_team_msdyn_customerasset"></a> team_msdyn_customerasset
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_customerasset entity [team_msdyn_customerasset](msdyn_customerasset.md#BKMK_team_msdyn_customerasset) Many-To-One relationship.
 
 |Property|Value|
@@ -3086,7 +3990,43 @@ Same as msdyn_customerasset entity [team_msdyn_customerasset](msdyn_customerasse
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_customerassetcategory"></a> team_msdyn_customerassetcategory
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_customerassetcategory entity [team_msdyn_customerassetcategory](msdyn_customerassetcategory.md#BKMK_team_msdyn_customerassetcategory) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_customerassetcategory|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_customerassetcategory|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_entitlementapplication"></a> team_msdyn_entitlementapplication
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_entitlementapplication entity [team_msdyn_entitlementapplication](msdyn_entitlementapplication.md#BKMK_team_msdyn_entitlementapplication) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_entitlementapplication|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_entitlementapplication|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_fieldservicesetting"></a> team_msdyn_fieldservicesetting
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_fieldservicesetting entity [team_msdyn_fieldservicesetting](msdyn_fieldservicesetting.md#BKMK_team_msdyn_fieldservicesetting) Many-To-One relationship.
 
@@ -3101,7 +4041,26 @@ Same as msdyn_fieldservicesetting entity [team_msdyn_fieldservicesetting](msdyn_
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_fieldserviceslaconfiguration"></a> team_msdyn_fieldserviceslaconfiguration
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_fieldserviceslaconfiguration entity [team_msdyn_fieldserviceslaconfiguration](msdyn_fieldserviceslaconfiguration.md#BKMK_team_msdyn_fieldserviceslaconfiguration) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_fieldserviceslaconfiguration|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|False|
+|ReferencedEntityNavigationPropertyName|team_msdyn_fieldserviceslaconfiguration|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_incidenttype"></a> team_msdyn_incidenttype
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_incidenttype entity [team_msdyn_incidenttype](msdyn_incidenttype.md#BKMK_team_msdyn_incidenttype) Many-To-One relationship.
 
@@ -3118,6 +4077,8 @@ Same as msdyn_incidenttype entity [team_msdyn_incidenttype](msdyn_incidenttype.m
 
 ### <a name="BKMK_team_msdyn_incidenttypecharacteristic"></a> team_msdyn_incidenttypecharacteristic
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_incidenttypecharacteristic entity [team_msdyn_incidenttypecharacteristic](msdyn_incidenttypecharacteristic.md#BKMK_team_msdyn_incidenttypecharacteristic) Many-To-One relationship.
 
 |Property|Value|
@@ -3132,6 +4093,8 @@ Same as msdyn_incidenttypecharacteristic entity [team_msdyn_incidenttypecharacte
 
 
 ### <a name="BKMK_team_msdyn_incidenttypeproduct"></a> team_msdyn_incidenttypeproduct
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_incidenttypeproduct entity [team_msdyn_incidenttypeproduct](msdyn_incidenttypeproduct.md#BKMK_team_msdyn_incidenttypeproduct) Many-To-One relationship.
 
@@ -3148,6 +4111,8 @@ Same as msdyn_incidenttypeproduct entity [team_msdyn_incidenttypeproduct](msdyn_
 
 ### <a name="BKMK_team_msdyn_incidenttypeservice"></a> team_msdyn_incidenttypeservice
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_incidenttypeservice entity [team_msdyn_incidenttypeservice](msdyn_incidenttypeservice.md#BKMK_team_msdyn_incidenttypeservice) Many-To-One relationship.
 
 |Property|Value|
@@ -3163,6 +4128,8 @@ Same as msdyn_incidenttypeservice entity [team_msdyn_incidenttypeservice](msdyn_
 
 ### <a name="BKMK_team_msdyn_incidenttypeservicetask"></a> team_msdyn_incidenttypeservicetask
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_incidenttypeservicetask entity [team_msdyn_incidenttypeservicetask](msdyn_incidenttypeservicetask.md#BKMK_team_msdyn_incidenttypeservicetask) Many-To-One relationship.
 
 |Property|Value|
@@ -3176,7 +4143,43 @@ Same as msdyn_incidenttypeservicetask entity [team_msdyn_incidenttypeservicetask
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_incidenttypessetup"></a> team_msdyn_incidenttypessetup
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_incidenttypessetup entity [team_msdyn_incidenttypessetup](msdyn_incidenttypessetup.md#BKMK_team_msdyn_incidenttypessetup) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_incidenttypessetup|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_incidenttypessetup|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_incidenttype_requirementgroup"></a> team_msdyn_incidenttype_requirementgroup
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_incidenttype_requirementgroup entity [team_msdyn_incidenttype_requirementgroup](msdyn_incidenttype_requirementgroup.md#BKMK_team_msdyn_incidenttype_requirementgroup) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_incidenttype_requirementgroup|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_incidenttype_requirementgroup|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_inventoryadjustment"></a> team_msdyn_inventoryadjustment
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_inventoryadjustment entity [team_msdyn_inventoryadjustment](msdyn_inventoryadjustment.md#BKMK_team_msdyn_inventoryadjustment) Many-To-One relationship.
 
@@ -3193,6 +4196,8 @@ Same as msdyn_inventoryadjustment entity [team_msdyn_inventoryadjustment](msdyn_
 
 ### <a name="BKMK_team_msdyn_inventoryadjustmentproduct"></a> team_msdyn_inventoryadjustmentproduct
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_inventoryadjustmentproduct entity [team_msdyn_inventoryadjustmentproduct](msdyn_inventoryadjustmentproduct.md#BKMK_team_msdyn_inventoryadjustmentproduct) Many-To-One relationship.
 
 |Property|Value|
@@ -3207,6 +4212,8 @@ Same as msdyn_inventoryadjustmentproduct entity [team_msdyn_inventoryadjustmentp
 
 
 ### <a name="BKMK_team_msdyn_inventoryjournal"></a> team_msdyn_inventoryjournal
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_inventoryjournal entity [team_msdyn_inventoryjournal](msdyn_inventoryjournal.md#BKMK_team_msdyn_inventoryjournal) Many-To-One relationship.
 
@@ -3223,6 +4230,8 @@ Same as msdyn_inventoryjournal entity [team_msdyn_inventoryjournal](msdyn_invent
 
 ### <a name="BKMK_team_msdyn_inventorytransfer"></a> team_msdyn_inventorytransfer
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_inventorytransfer entity [team_msdyn_inventorytransfer](msdyn_inventorytransfer.md#BKMK_team_msdyn_inventorytransfer) Many-To-One relationship.
 
 |Property|Value|
@@ -3237,6 +4246,8 @@ Same as msdyn_inventorytransfer entity [team_msdyn_inventorytransfer](msdyn_inve
 
 
 ### <a name="BKMK_team_msdyn_orderinvoicingdate"></a> team_msdyn_orderinvoicingdate
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_orderinvoicingdate entity [team_msdyn_orderinvoicingdate](msdyn_orderinvoicingdate.md#BKMK_team_msdyn_orderinvoicingdate) Many-To-One relationship.
 
@@ -3253,6 +4264,8 @@ Same as msdyn_orderinvoicingdate entity [team_msdyn_orderinvoicingdate](msdyn_or
 
 ### <a name="BKMK_team_msdyn_orderinvoicingproduct"></a> team_msdyn_orderinvoicingproduct
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_orderinvoicingproduct entity [team_msdyn_orderinvoicingproduct](msdyn_orderinvoicingproduct.md#BKMK_team_msdyn_orderinvoicingproduct) Many-To-One relationship.
 
 |Property|Value|
@@ -3267,6 +4280,8 @@ Same as msdyn_orderinvoicingproduct entity [team_msdyn_orderinvoicingproduct](ms
 
 
 ### <a name="BKMK_team_msdyn_orderinvoicingsetup"></a> team_msdyn_orderinvoicingsetup
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_orderinvoicingsetup entity [team_msdyn_orderinvoicingsetup](msdyn_orderinvoicingsetup.md#BKMK_team_msdyn_orderinvoicingsetup) Many-To-One relationship.
 
@@ -3283,6 +4298,8 @@ Same as msdyn_orderinvoicingsetup entity [team_msdyn_orderinvoicingsetup](msdyn_
 
 ### <a name="BKMK_team_msdyn_orderinvoicingsetupdate"></a> team_msdyn_orderinvoicingsetupdate
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_orderinvoicingsetupdate entity [team_msdyn_orderinvoicingsetupdate](msdyn_orderinvoicingsetupdate.md#BKMK_team_msdyn_orderinvoicingsetupdate) Many-To-One relationship.
 
 |Property|Value|
@@ -3297,6 +4314,8 @@ Same as msdyn_orderinvoicingsetupdate entity [team_msdyn_orderinvoicingsetupdate
 
 
 ### <a name="BKMK_team_msdyn_payment"></a> team_msdyn_payment
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_payment entity [team_msdyn_payment](msdyn_payment.md#BKMK_team_msdyn_payment) Many-To-One relationship.
 
@@ -3313,6 +4332,8 @@ Same as msdyn_payment entity [team_msdyn_payment](msdyn_payment.md#BKMK_team_msd
 
 ### <a name="BKMK_team_msdyn_paymentdetail"></a> team_msdyn_paymentdetail
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_paymentdetail entity [team_msdyn_paymentdetail](msdyn_paymentdetail.md#BKMK_team_msdyn_paymentdetail) Many-To-One relationship.
 
 |Property|Value|
@@ -3327,6 +4348,8 @@ Same as msdyn_paymentdetail entity [team_msdyn_paymentdetail](msdyn_paymentdetai
 
 
 ### <a name="BKMK_team_msdyn_paymentmethod"></a> team_msdyn_paymentmethod
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_paymentmethod entity [team_msdyn_paymentmethod](msdyn_paymentmethod.md#BKMK_team_msdyn_paymentmethod) Many-To-One relationship.
 
@@ -3343,6 +4366,8 @@ Same as msdyn_paymentmethod entity [team_msdyn_paymentmethod](msdyn_paymentmetho
 
 ### <a name="BKMK_team_msdyn_paymentterm"></a> team_msdyn_paymentterm
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_paymentterm entity [team_msdyn_paymentterm](msdyn_paymentterm.md#BKMK_team_msdyn_paymentterm) Many-To-One relationship.
 
 |Property|Value|
@@ -3357,6 +4382,8 @@ Same as msdyn_paymentterm entity [team_msdyn_paymentterm](msdyn_paymentterm.md#B
 
 
 ### <a name="BKMK_team_msdyn_postalcode"></a> team_msdyn_postalcode
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_postalcode entity [team_msdyn_postalcode](msdyn_postalcode.md#BKMK_team_msdyn_postalcode) Many-To-One relationship.
 
@@ -3373,6 +4400,8 @@ Same as msdyn_postalcode entity [team_msdyn_postalcode](msdyn_postalcode.md#BKMK
 
 ### <a name="BKMK_team_msdyn_purchaseorder"></a> team_msdyn_purchaseorder
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_purchaseorder entity [team_msdyn_purchaseorder](msdyn_purchaseorder.md#BKMK_team_msdyn_purchaseorder) Many-To-One relationship.
 
 |Property|Value|
@@ -3387,6 +4416,8 @@ Same as msdyn_purchaseorder entity [team_msdyn_purchaseorder](msdyn_purchaseorde
 
 
 ### <a name="BKMK_team_msdyn_purchaseorderbill"></a> team_msdyn_purchaseorderbill
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_purchaseorderbill entity [team_msdyn_purchaseorderbill](msdyn_purchaseorderbill.md#BKMK_team_msdyn_purchaseorderbill) Many-To-One relationship.
 
@@ -3403,6 +4434,8 @@ Same as msdyn_purchaseorderbill entity [team_msdyn_purchaseorderbill](msdyn_purc
 
 ### <a name="BKMK_team_msdyn_purchaseorderproduct"></a> team_msdyn_purchaseorderproduct
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_purchaseorderproduct entity [team_msdyn_purchaseorderproduct](msdyn_purchaseorderproduct.md#BKMK_team_msdyn_purchaseorderproduct) Many-To-One relationship.
 
 |Property|Value|
@@ -3417,6 +4450,8 @@ Same as msdyn_purchaseorderproduct entity [team_msdyn_purchaseorderproduct](msdy
 
 
 ### <a name="BKMK_team_msdyn_purchaseorderreceipt"></a> team_msdyn_purchaseorderreceipt
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_purchaseorderreceipt entity [team_msdyn_purchaseorderreceipt](msdyn_purchaseorderreceipt.md#BKMK_team_msdyn_purchaseorderreceipt) Many-To-One relationship.
 
@@ -3433,6 +4468,8 @@ Same as msdyn_purchaseorderreceipt entity [team_msdyn_purchaseorderreceipt](msdy
 
 ### <a name="BKMK_team_msdyn_purchaseorderreceiptproduct"></a> team_msdyn_purchaseorderreceiptproduct
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_purchaseorderreceiptproduct entity [team_msdyn_purchaseorderreceiptproduct](msdyn_purchaseorderreceiptproduct.md#BKMK_team_msdyn_purchaseorderreceiptproduct) Many-To-One relationship.
 
 |Property|Value|
@@ -3447,6 +4484,8 @@ Same as msdyn_purchaseorderreceiptproduct entity [team_msdyn_purchaseorderreceip
 
 
 ### <a name="BKMK_team_msdyn_purchaseordersubstatus"></a> team_msdyn_purchaseordersubstatus
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_purchaseordersubstatus entity [team_msdyn_purchaseordersubstatus](msdyn_purchaseordersubstatus.md#BKMK_team_msdyn_purchaseordersubstatus) Many-To-One relationship.
 
@@ -3463,6 +4502,8 @@ Same as msdyn_purchaseordersubstatus entity [team_msdyn_purchaseordersubstatus](
 
 ### <a name="BKMK_team_msdyn_quotebookingincident"></a> team_msdyn_quotebookingincident
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_quotebookingincident entity [team_msdyn_quotebookingincident](msdyn_quotebookingincident.md#BKMK_team_msdyn_quotebookingincident) Many-To-One relationship.
 
 |Property|Value|
@@ -3477,6 +4518,8 @@ Same as msdyn_quotebookingincident entity [team_msdyn_quotebookingincident](msdy
 
 
 ### <a name="BKMK_team_msdyn_quotebookingproduct"></a> team_msdyn_quotebookingproduct
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_quotebookingproduct entity [team_msdyn_quotebookingproduct](msdyn_quotebookingproduct.md#BKMK_team_msdyn_quotebookingproduct) Many-To-One relationship.
 
@@ -3493,6 +4536,8 @@ Same as msdyn_quotebookingproduct entity [team_msdyn_quotebookingproduct](msdyn_
 
 ### <a name="BKMK_team_msdyn_quotebookingservice"></a> team_msdyn_quotebookingservice
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_quotebookingservice entity [team_msdyn_quotebookingservice](msdyn_quotebookingservice.md#BKMK_team_msdyn_quotebookingservice) Many-To-One relationship.
 
 |Property|Value|
@@ -3507,6 +4552,8 @@ Same as msdyn_quotebookingservice entity [team_msdyn_quotebookingservice](msdyn_
 
 
 ### <a name="BKMK_team_msdyn_quotebookingservicetask"></a> team_msdyn_quotebookingservicetask
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_quotebookingservicetask entity [team_msdyn_quotebookingservicetask](msdyn_quotebookingservicetask.md#BKMK_team_msdyn_quotebookingservicetask) Many-To-One relationship.
 
@@ -3523,6 +4570,8 @@ Same as msdyn_quotebookingservicetask entity [team_msdyn_quotebookingservicetask
 
 ### <a name="BKMK_team_msdyn_quotebookingsetup"></a> team_msdyn_quotebookingsetup
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_quotebookingsetup entity [team_msdyn_quotebookingsetup](msdyn_quotebookingsetup.md#BKMK_team_msdyn_quotebookingsetup) Many-To-One relationship.
 
 |Property|Value|
@@ -3537,6 +4586,8 @@ Same as msdyn_quotebookingsetup entity [team_msdyn_quotebookingsetup](msdyn_quot
 
 
 ### <a name="BKMK_team_msdyn_quoteinvoicingproduct"></a> team_msdyn_quoteinvoicingproduct
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_quoteinvoicingproduct entity [team_msdyn_quoteinvoicingproduct](msdyn_quoteinvoicingproduct.md#BKMK_team_msdyn_quoteinvoicingproduct) Many-To-One relationship.
 
@@ -3553,6 +4604,8 @@ Same as msdyn_quoteinvoicingproduct entity [team_msdyn_quoteinvoicingproduct](ms
 
 ### <a name="BKMK_team_msdyn_quoteinvoicingsetup"></a> team_msdyn_quoteinvoicingsetup
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_quoteinvoicingsetup entity [team_msdyn_quoteinvoicingsetup](msdyn_quoteinvoicingsetup.md#BKMK_team_msdyn_quoteinvoicingsetup) Many-To-One relationship.
 
 |Property|Value|
@@ -3567,6 +4620,8 @@ Same as msdyn_quoteinvoicingsetup entity [team_msdyn_quoteinvoicingsetup](msdyn_
 
 
 ### <a name="BKMK_team_msdyn_resourcepaytype"></a> team_msdyn_resourcepaytype
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_resourcepaytype entity [team_msdyn_resourcepaytype](msdyn_resourcepaytype.md#BKMK_team_msdyn_resourcepaytype) Many-To-One relationship.
 
@@ -3583,6 +4638,8 @@ Same as msdyn_resourcepaytype entity [team_msdyn_resourcepaytype](msdyn_resource
 
 ### <a name="BKMK_team_msdyn_rma"></a> team_msdyn_rma
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_rma entity [team_msdyn_rma](msdyn_rma.md#BKMK_team_msdyn_rma) Many-To-One relationship.
 
 |Property|Value|
@@ -3597,6 +4654,8 @@ Same as msdyn_rma entity [team_msdyn_rma](msdyn_rma.md#BKMK_team_msdyn_rma) Many
 
 
 ### <a name="BKMK_team_msdyn_rmaproduct"></a> team_msdyn_rmaproduct
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_rmaproduct entity [team_msdyn_rmaproduct](msdyn_rmaproduct.md#BKMK_team_msdyn_rmaproduct) Many-To-One relationship.
 
@@ -3613,6 +4672,8 @@ Same as msdyn_rmaproduct entity [team_msdyn_rmaproduct](msdyn_rmaproduct.md#BKMK
 
 ### <a name="BKMK_team_msdyn_rmareceipt"></a> team_msdyn_rmareceipt
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_rmareceipt entity [team_msdyn_rmareceipt](msdyn_rmareceipt.md#BKMK_team_msdyn_rmareceipt) Many-To-One relationship.
 
 |Property|Value|
@@ -3627,6 +4688,8 @@ Same as msdyn_rmareceipt entity [team_msdyn_rmareceipt](msdyn_rmareceipt.md#BKMK
 
 
 ### <a name="BKMK_team_msdyn_rmareceiptproduct"></a> team_msdyn_rmareceiptproduct
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_rmareceiptproduct entity [team_msdyn_rmareceiptproduct](msdyn_rmareceiptproduct.md#BKMK_team_msdyn_rmareceiptproduct) Many-To-One relationship.
 
@@ -3643,6 +4706,8 @@ Same as msdyn_rmareceiptproduct entity [team_msdyn_rmareceiptproduct](msdyn_rmar
 
 ### <a name="BKMK_team_msdyn_rmasubstatus"></a> team_msdyn_rmasubstatus
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_rmasubstatus entity [team_msdyn_rmasubstatus](msdyn_rmasubstatus.md#BKMK_team_msdyn_rmasubstatus) Many-To-One relationship.
 
 |Property|Value|
@@ -3657,6 +4722,8 @@ Same as msdyn_rmasubstatus entity [team_msdyn_rmasubstatus](msdyn_rmasubstatus.m
 
 
 ### <a name="BKMK_team_msdyn_rtv"></a> team_msdyn_rtv
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_rtv entity [team_msdyn_rtv](msdyn_rtv.md#BKMK_team_msdyn_rtv) Many-To-One relationship.
 
@@ -3673,6 +4740,8 @@ Same as msdyn_rtv entity [team_msdyn_rtv](msdyn_rtv.md#BKMK_team_msdyn_rtv) Many
 
 ### <a name="BKMK_team_msdyn_rtvproduct"></a> team_msdyn_rtvproduct
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_rtvproduct entity [team_msdyn_rtvproduct](msdyn_rtvproduct.md#BKMK_team_msdyn_rtvproduct) Many-To-One relationship.
 
 |Property|Value|
@@ -3687,6 +4756,8 @@ Same as msdyn_rtvproduct entity [team_msdyn_rtvproduct](msdyn_rtvproduct.md#BKMK
 
 
 ### <a name="BKMK_team_msdyn_rtvsubstatus"></a> team_msdyn_rtvsubstatus
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_rtvsubstatus entity [team_msdyn_rtvsubstatus](msdyn_rtvsubstatus.md#BKMK_team_msdyn_rtvsubstatus) Many-To-One relationship.
 
@@ -3703,6 +4774,8 @@ Same as msdyn_rtvsubstatus entity [team_msdyn_rtvsubstatus](msdyn_rtvsubstatus.m
 
 ### <a name="BKMK_team_msdyn_servicetasktype"></a> team_msdyn_servicetasktype
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_servicetasktype entity [team_msdyn_servicetasktype](msdyn_servicetasktype.md#BKMK_team_msdyn_servicetasktype) Many-To-One relationship.
 
 |Property|Value|
@@ -3717,6 +4790,8 @@ Same as msdyn_servicetasktype entity [team_msdyn_servicetasktype](msdyn_servicet
 
 
 ### <a name="BKMK_team_msdyn_shipvia"></a> team_msdyn_shipvia
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_shipvia entity [team_msdyn_shipvia](msdyn_shipvia.md#BKMK_team_msdyn_shipvia) Many-To-One relationship.
 
@@ -3733,6 +4808,8 @@ Same as msdyn_shipvia entity [team_msdyn_shipvia](msdyn_shipvia.md#BKMK_team_msd
 
 ### <a name="BKMK_team_msdyn_taxcode"></a> team_msdyn_taxcode
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_taxcode entity [team_msdyn_taxcode](msdyn_taxcode.md#BKMK_team_msdyn_taxcode) Many-To-One relationship.
 
 |Property|Value|
@@ -3747,6 +4824,8 @@ Same as msdyn_taxcode entity [team_msdyn_taxcode](msdyn_taxcode.md#BKMK_team_msd
 
 
 ### <a name="BKMK_team_msdyn_taxcodedetail"></a> team_msdyn_taxcodedetail
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_taxcodedetail entity [team_msdyn_taxcodedetail](msdyn_taxcodedetail.md#BKMK_team_msdyn_taxcodedetail) Many-To-One relationship.
 
@@ -3763,6 +4842,8 @@ Same as msdyn_taxcodedetail entity [team_msdyn_taxcodedetail](msdyn_taxcodedetai
 
 ### <a name="BKMK_team_msdyn_timeoffrequest"></a> team_msdyn_timeoffrequest
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_timeoffrequest entity [team_msdyn_timeoffrequest](msdyn_timeoffrequest.md#BKMK_team_msdyn_timeoffrequest) Many-To-One relationship.
 
 |Property|Value|
@@ -3777,6 +4858,8 @@ Same as msdyn_timeoffrequest entity [team_msdyn_timeoffrequest](msdyn_timeoffreq
 
 
 ### <a name="BKMK_team_msdyn_warehouse"></a> team_msdyn_warehouse
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_warehouse entity [team_msdyn_warehouse](msdyn_warehouse.md#BKMK_team_msdyn_warehouse) Many-To-One relationship.
 
@@ -3793,6 +4876,8 @@ Same as msdyn_warehouse entity [team_msdyn_warehouse](msdyn_warehouse.md#BKMK_te
 
 ### <a name="BKMK_team_msdyn_workorder"></a> team_msdyn_workorder
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_workorder entity [team_msdyn_workorder](msdyn_workorder.md#BKMK_team_msdyn_workorder) Many-To-One relationship.
 
 |Property|Value|
@@ -3807,6 +4892,8 @@ Same as msdyn_workorder entity [team_msdyn_workorder](msdyn_workorder.md#BKMK_te
 
 
 ### <a name="BKMK_team_msdyn_workordercharacteristic"></a> team_msdyn_workordercharacteristic
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_workordercharacteristic entity [team_msdyn_workordercharacteristic](msdyn_workordercharacteristic.md#BKMK_team_msdyn_workordercharacteristic) Many-To-One relationship.
 
@@ -3823,6 +4910,8 @@ Same as msdyn_workordercharacteristic entity [team_msdyn_workordercharacteristic
 
 ### <a name="BKMK_team_msdyn_workorderincident"></a> team_msdyn_workorderincident
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_workorderincident entity [team_msdyn_workorderincident](msdyn_workorderincident.md#BKMK_team_msdyn_workorderincident) Many-To-One relationship.
 
 |Property|Value|
@@ -3837,6 +4926,8 @@ Same as msdyn_workorderincident entity [team_msdyn_workorderincident](msdyn_work
 
 
 ### <a name="BKMK_team_msdyn_workorderproduct"></a> team_msdyn_workorderproduct
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_workorderproduct entity [team_msdyn_workorderproduct](msdyn_workorderproduct.md#BKMK_team_msdyn_workorderproduct) Many-To-One relationship.
 
@@ -3853,6 +4944,8 @@ Same as msdyn_workorderproduct entity [team_msdyn_workorderproduct](msdyn_workor
 
 ### <a name="BKMK_team_msdyn_workorderresourcerestriction"></a> team_msdyn_workorderresourcerestriction
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_workorderresourcerestriction entity [team_msdyn_workorderresourcerestriction](msdyn_workorderresourcerestriction.md#BKMK_team_msdyn_workorderresourcerestriction) Many-To-One relationship.
 
 |Property|Value|
@@ -3867,6 +4960,8 @@ Same as msdyn_workorderresourcerestriction entity [team_msdyn_workorderresourcer
 
 
 ### <a name="BKMK_team_msdyn_workorderservice"></a> team_msdyn_workorderservice
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_workorderservice entity [team_msdyn_workorderservice](msdyn_workorderservice.md#BKMK_team_msdyn_workorderservice) Many-To-One relationship.
 
@@ -3883,6 +4978,8 @@ Same as msdyn_workorderservice entity [team_msdyn_workorderservice](msdyn_workor
 
 ### <a name="BKMK_team_msdyn_workorderservicetask"></a> team_msdyn_workorderservicetask
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_workorderservicetask entity [team_msdyn_workorderservicetask](msdyn_workorderservicetask.md#BKMK_team_msdyn_workorderservicetask) Many-To-One relationship.
 
 |Property|Value|
@@ -3897,6 +4994,8 @@ Same as msdyn_workorderservicetask entity [team_msdyn_workorderservicetask](msdy
 
 
 ### <a name="BKMK_team_msdyn_workordersubstatus"></a> team_msdyn_workordersubstatus
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_workordersubstatus entity [team_msdyn_workordersubstatus](msdyn_workordersubstatus.md#BKMK_team_msdyn_workordersubstatus) Many-To-One relationship.
 
@@ -3913,6 +5012,8 @@ Same as msdyn_workordersubstatus entity [team_msdyn_workordersubstatus](msdyn_wo
 
 ### <a name="BKMK_team_msdyn_workordertype"></a> team_msdyn_workordertype
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_workordertype entity [team_msdyn_workordertype](msdyn_workordertype.md#BKMK_team_msdyn_workordertype) Many-To-One relationship.
 
 |Property|Value|
@@ -3927,6 +5028,8 @@ Same as msdyn_workordertype entity [team_msdyn_workordertype](msdyn_workordertyp
 
 
 ### <a name="BKMK_team_msdyn_iotalert"></a> team_msdyn_iotalert
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_iotalert entity [team_msdyn_iotalert](msdyn_iotalert.md#BKMK_team_msdyn_iotalert) Many-To-One relationship.
 
@@ -3943,6 +5046,8 @@ Same as msdyn_iotalert entity [team_msdyn_iotalert](msdyn_iotalert.md#BKMK_team_
 
 ### <a name="BKMK_team_msdyn_iotdevice"></a> team_msdyn_iotdevice
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_iotdevice entity [team_msdyn_iotdevice](msdyn_iotdevice.md#BKMK_team_msdyn_iotdevice) Many-To-One relationship.
 
 |Property|Value|
@@ -3957,6 +5062,8 @@ Same as msdyn_iotdevice entity [team_msdyn_iotdevice](msdyn_iotdevice.md#BKMK_te
 
 
 ### <a name="BKMK_team_msdyn_iotdevicecategory"></a> team_msdyn_iotdevicecategory
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_iotdevicecategory entity [team_msdyn_iotdevicecategory](msdyn_iotdevicecategory.md#BKMK_team_msdyn_iotdevicecategory) Many-To-One relationship.
 
@@ -3973,6 +5080,8 @@ Same as msdyn_iotdevicecategory entity [team_msdyn_iotdevicecategory](msdyn_iotd
 
 ### <a name="BKMK_team_msdyn_iotdevicecommand"></a> team_msdyn_iotdevicecommand
 
+**Added by**: Active Solution Solution
+
 Same as msdyn_iotdevicecommand entity [team_msdyn_iotdevicecommand](msdyn_iotdevicecommand.md#BKMK_team_msdyn_iotdevicecommand) Many-To-One relationship.
 
 |Property|Value|
@@ -3986,7 +5095,60 @@ Same as msdyn_iotdevicecommand entity [team_msdyn_iotdevicecommand](msdyn_iotdev
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
+### <a name="BKMK_team_msdyn_iotdevicecommanddefinition"></a> team_msdyn_iotdevicecommanddefinition
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_iotdevicecommanddefinition entity [team_msdyn_iotdevicecommanddefinition](msdyn_iotdevicecommanddefinition.md#BKMK_team_msdyn_iotdevicecommanddefinition) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_iotdevicecommanddefinition|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_iotdevicecommanddefinition|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_iotdevicedatahistory"></a> team_msdyn_iotdevicedatahistory
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_iotdevicedatahistory entity [team_msdyn_iotdevicedatahistory](msdyn_iotdevicedatahistory.md#BKMK_team_msdyn_iotdevicedatahistory) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_iotdevicedatahistory|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_iotdevicedatahistory|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_iotdeviceproperty"></a> team_msdyn_iotdeviceproperty
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_iotdeviceproperty entity [team_msdyn_iotdeviceproperty](msdyn_iotdeviceproperty.md#BKMK_team_msdyn_iotdeviceproperty) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_iotdeviceproperty|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_iotdeviceproperty|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
 ### <a name="BKMK_team_msdyn_iotdeviceregistrationhistory"></a> team_msdyn_iotdeviceregistrationhistory
+
+**Added by**: Active Solution Solution
 
 Same as msdyn_iotdeviceregistrationhistory entity [team_msdyn_iotdeviceregistrationhistory](msdyn_iotdeviceregistrationhistory.md#BKMK_team_msdyn_iotdeviceregistrationhistory) Many-To-One relationship.
 
@@ -3997,6 +5159,108 @@ Same as msdyn_iotdeviceregistrationhistory entity [team_msdyn_iotdeviceregistrat
 |IsHierarchical|False|
 |IsCustomizable|True|
 |ReferencedEntityNavigationPropertyName|team_msdyn_iotdeviceregistrationhistory|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_iotpropertydefinition"></a> team_msdyn_iotpropertydefinition
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_iotpropertydefinition entity [team_msdyn_iotpropertydefinition](msdyn_iotpropertydefinition.md#BKMK_team_msdyn_iotpropertydefinition) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_iotpropertydefinition|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_iotpropertydefinition|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_iotsettings"></a> team_msdyn_iotsettings
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_iotsettings entity [team_msdyn_iotsettings](msdyn_iotsettings.md#BKMK_team_msdyn_iotsettings) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_iotsettings|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_iotsettings|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_entityconfiguration"></a> team_msdyn_entityconfiguration
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_entityconfiguration entity [team_msdyn_entityconfiguration](msdyn_entityconfiguration.md#BKMK_team_msdyn_entityconfiguration) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_entityconfiguration|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_entityconfiguration|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_geofence"></a> team_msdyn_geofence
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_geofence entity [team_msdyn_geofence](msdyn_geofence.md#BKMK_team_msdyn_geofence) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_geofence|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_geofence|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_geofenceevent"></a> team_msdyn_geofenceevent
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_geofenceevent entity [team_msdyn_geofenceevent](msdyn_geofenceevent.md#BKMK_team_msdyn_geofenceevent) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_geofenceevent|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_geofenceevent|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_msdyn_geofencingsettings"></a> team_msdyn_geofencingsettings
+
+**Added by**: Active Solution Solution
+
+Same as msdyn_geofencingsettings entity [team_msdyn_geofencingsettings](msdyn_geofencingsettings.md#BKMK_team_msdyn_geofencingsettings) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|msdyn_geofencingsettings|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|True|
+|ReferencedEntityNavigationPropertyName|team_msdyn_geofencingsettings|
 |AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
 |CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
@@ -4464,6 +5728,21 @@ Same as duplicaterecord entity [Team_DuplicateMatchingRecord](duplicaterecord.md
 |ReferencedEntityNavigationPropertyName|Team_DuplicateMatchingRecord|
 |AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
 |CascadeConfiguration|Assign: NoCascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
+
+
+### <a name="BKMK_team_mailboxtrackingcategory"></a> team_mailboxtrackingcategory
+
+Same as mailboxtrackingcategory entity [team_mailboxtrackingcategory](mailboxtrackingcategory.md#BKMK_team_mailboxtrackingcategory) Many-To-One relationship.
+
+|Property|Value|
+|--------|-----|
+|ReferencingEntity|mailboxtrackingcategory|
+|ReferencingAttribute|owningteam|
+|IsHierarchical|False|
+|IsCustomizable|False|
+|ReferencedEntityNavigationPropertyName|team_mailboxtrackingcategory|
+|AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
+|CascadeConfiguration|Assign: NoCascade<br />Delete: NoCascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
 ### <a name="BKMK_team_userentityuisettings"></a> team_userentityuisettings
@@ -4953,6 +6232,8 @@ Each Many-To-One relationship is defined by a corresponding One-To-Many relation
 
 ### <a name="BKMK_opportunity_Teams"></a> opportunity_Teams
 
+**Added by**: Sales Solution
+
 See opportunity Entity [opportunity_Teams](opportunity.md#BKMK_opportunity_Teams) One-To-Many relationship.
 
 ### <a name="BKMK_knowledgearticle_Teams"></a> knowledgearticle_Teams
@@ -5085,6 +6366,6 @@ IntersectEntityName: teamprofiles<br />
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.team?text=team EntityType" />

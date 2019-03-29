@@ -1,34 +1,36 @@
 ---
-title: "CampaignActivityItem Entity Reference (Developer Guide for Dynamics 365 for Customer Engagement)| MicrosoftDocs"
+title: "CampaignActivityItem Entity Reference (Dynamics 365 for Customer Engagement)| MicrosoftDocs"
 description: "Includes schema information and supported messages for the CampaignActivityItem entity."
-ms.date: 12/05/2017
-ms.service: crm-online
-ms.topic: reference
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
+ms.date: 03/28/2019
+ms.service: "crm-online"
+ms.topic: "reference"
 ms.assetid: 3948cc48-07c8-7f60-0608-71c37158ad7c
-author: JimDaly
-ms.author: jdaly
-manager: jdaly
+author: "KumarVivek"
+ms.author: "kvivek"
+manager: "annbe"
 search.audienceType: 
   - developer
 search.app: 
+  - PowerApps
   - D365CE
 ---
 # CampaignActivityItem Entity Reference
 
+[!INCLUDE[](../../includes/cc_applies_to_update_9_0_0.md)]
+
 Work item of a campaign activity, such as a list or sales literature.
 
-**Added by**: Marketing Solution<br />
+**Added by**: Marketing Solution
+
 
 ## Messages
 
 |Message|Web API Operation|SDK Assembly|
 |-|-|-|
-|Create|POST [*org URI*]/api/data/v9.0/campaignactivityitems<br />See [Create](../webapi/create-entity-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
-|Delete|DELETE [*org URI*]/api/data/v9.0/campaignactivityitems(*campaignactivityitemid*)<br />See [Delete](../webapi/update-delete-entities-using-web-api.md#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
-|Retrieve|GET [*org URI*]/api/data/v9.0/campaignactivityitems(*campaignactivityitemid*)<br />See [Retrieve](../webapi/retrieve-entity-using-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
-|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/campaignactivityitems<br />See [Query Data](../webapi/query-data-web-api.md)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
+|Create|POST [*org URI*]/api/data/v9.0/campaignactivityitems<br />See [Create](/powerapps/developer/common-data-service/webapi/create-entity-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*>|
+|Delete|DELETE [*org URI*]/api/data/v9.0/campaignactivityitems(*campaignactivityitemid*)<br />See [Delete](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-delete)|<xref:Microsoft.Xrm.Sdk.Messages.DeleteRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>|
+|Retrieve|GET [*org URI*]/api/data/v9.0/campaignactivityitems(*campaignactivityitemid*)<br />See [Retrieve](/powerapps/developer/common-data-service/webapi/retrieve-entity-using-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>|
+|RetrieveMultiple|GET [*org URI*]/api/data/v9.0/campaignactivityitems<br />See [Query Data](/powerapps/developer/common-data-service/webapi/query-data-web-api)|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> or <br /><xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>|
 
 ## Entity Properties
 
@@ -79,6 +81,8 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 
 
 ### <a name="BKMK_CampaignActivityIdType"></a> CampaignActivityIdType
+
+**Added by**: Active Solution Solution
 
 |Property|Value|
 |--------|-----|
@@ -212,7 +216,9 @@ These attributes return true for either **IsValidForCreate** or **IsValidForUpda
 |Type|Integer|
 
 <a name="read-only-attributes"></a>
+
 ## Read-only attributes
+
 These attributes return false for both **IsValidForCreate** or **IsValidForUpdate**. Listed by **SchemaName**.
 
 - [CampaignActivityIdName](#BKMK_CampaignActivityIdName)
@@ -339,6 +345,8 @@ Listed by **SchemaName**.
 
 ### <a name="BKMK_campaignactivityitem_AsyncOperations"></a> campaignactivityitem_AsyncOperations
 
+**Added by**: System Solution Solution
+
 Same as asyncoperation entity [campaignactivityitem_AsyncOperations](asyncoperation.md#BKMK_campaignactivityitem_AsyncOperations) Many-To-One relationship.
 
 |Property|Value|
@@ -354,6 +362,8 @@ Same as asyncoperation entity [campaignactivityitem_AsyncOperations](asyncoperat
 
 ### <a name="BKMK_campaignactivityitem_MailboxTrackingFolders"></a> campaignactivityitem_MailboxTrackingFolders
 
+**Added by**: System Solution Solution
+
 Same as mailboxtrackingfolder entity [campaignactivityitem_MailboxTrackingFolders](mailboxtrackingfolder.md#BKMK_campaignactivityitem_MailboxTrackingFolders) Many-To-One relationship.
 
 |Property|Value|
@@ -364,10 +374,12 @@ Same as mailboxtrackingfolder entity [campaignactivityitem_MailboxTrackingFolder
 |IsCustomizable|True|
 |ReferencedEntityNavigationPropertyName|campaignactivityitem_MailboxTrackingFolders|
 |AssociatedMenuConfiguration|Behavior: DoNotDisplay<br />Group: Details<br />Label: <br />Order: |
-|CascadeConfiguration|Assign: Cascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: Cascade<br />Share: Cascade<br />Unshare: Cascade|
+|CascadeConfiguration|Assign: NoCascade<br />Delete: Cascade<br />Merge: NoCascade<br />Reparent: NoCascade<br />Share: NoCascade<br />Unshare: NoCascade|
 
 
 ### <a name="BKMK_campaignactivityitem_UserEntityInstanceDatas"></a> campaignactivityitem_UserEntityInstanceDatas
+
+**Added by**: System Solution Solution
 
 Same as userentityinstancedata entity [campaignactivityitem_UserEntityInstanceDatas](userentityinstancedata.md#BKMK_campaignactivityitem_UserEntityInstanceDatas) Many-To-One relationship.
 
@@ -384,6 +396,8 @@ Same as userentityinstancedata entity [campaignactivityitem_UserEntityInstanceDa
 
 ### <a name="BKMK_campaignactivityitem_BulkDeleteFailures"></a> campaignactivityitem_BulkDeleteFailures
 
+**Added by**: System Solution Solution
+
 Same as bulkdeletefailure entity [campaignactivityitem_BulkDeleteFailures](bulkdeletefailure.md#BKMK_campaignactivityitem_BulkDeleteFailures) Many-To-One relationship.
 
 |Property|Value|
@@ -399,6 +413,8 @@ Same as bulkdeletefailure entity [campaignactivityitem_BulkDeleteFailures](bulkd
 
 ### <a name="BKMK_campaignactivityitem_PrincipalObjectAttributeAccesses"></a> campaignactivityitem_PrincipalObjectAttributeAccesses
 
+**Added by**: System Solution Solution
+
 Same as principalobjectattributeaccess entity [campaignactivityitem_PrincipalObjectAttributeAccesses](principalobjectattributeaccess.md#BKMK_campaignactivityitem_PrincipalObjectAttributeAccesses) Many-To-One relationship.
 
 |Property|Value|
@@ -413,6 +429,8 @@ Same as principalobjectattributeaccess entity [campaignactivityitem_PrincipalObj
 
 
 ### <a name="BKMK_userentityinstancedata_campaignactivityitem"></a> userentityinstancedata_campaignactivityitem
+
+**Added by**: System Solution Solution
 
 Same as userentityinstancedata entity [userentityinstancedata_campaignactivityitem](userentityinstancedata.md#BKMK_userentityinstancedata_campaignactivityitem) Many-To-One relationship.
 
@@ -434,6 +452,8 @@ Each Many-To-One relationship is defined by a corresponding One-To-Many relation
 
 
 ### <a name="BKMK_ActivityPointer_CampaignActivityItems"></a> ActivityPointer_CampaignActivityItems
+
+**Added by**: System Solution Solution
 
 See activitypointer Entity [ActivityPointer_CampaignActivityItems](activitypointer.md#BKMK_ActivityPointer_CampaignActivityItems) One-To-Many relationship.
 <a name="manytomany"></a>
@@ -457,6 +477,6 @@ See campaignactivity Entity [campaignactivitysalesliterature_association](campai
 ### See also
 
 [About the Entity Reference](../about-entity-reference.md)<br />
-[Programming reference for Dynamics 365 for Customer Engagement apps](../programming-reference.md)<br />
+[Programming reference for Dynamics 365 Customer Engagement](../programming-reference.md)<br />
 [Web API Reference](/dynamics365/customer-engagement/web-api/about)<br />
 <xref href="Microsoft.Dynamics.CRM.campaignactivityitem?text=campaignactivityitem EntityType" />
