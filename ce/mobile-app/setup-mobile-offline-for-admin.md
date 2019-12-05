@@ -141,7 +141,7 @@ You need to create mobile offline profiles for users to configure filters that d
    > [!div class="mx-imgBorder"]
    >![Enviroment settings](media/offline_open_an_enviroment.png "Enviroment settings")
  
-4. Under **Data managment**, select **Mobile configuration**.
+4. Under **Users + Permissions**, select **Mobile configuration**.
 
    > [!div class="mx-imgBorder"]
    >![Mobile configuration setting](media/offline_mobile_config_settings.png "Mobile configuration settings")
